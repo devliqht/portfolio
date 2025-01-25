@@ -33,7 +33,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
   tags = [],
 }) => {
   return (
-    <div className="container flex flex-col h-full border-2 border-[var(--dblue-l)] md:p-6 w-fit rounded-lg shadow-md">
+    <div className="container flex flex-col md:w-[420px] md:border-2 md:border-[var(--dblue-l)] md:p-2 rounded-lg shadow-md">
     <div className="mb-4 h-[220px] p-2 border-[var(--dblue-ll)] border-2 rounded-lg overflow-hidden">
       <img
         src={imageUrl}
@@ -57,7 +57,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded-lg"
+              className="px-2 py-1 text-xs bg-gray-800 text-gray-300 rounded-lg"
             >
               {tag}
             </span>
@@ -94,7 +94,7 @@ const BasicContainer: React.FC<BasicContainerProps> = ({
 }) => {
   return (
     <div
-      className={`container ${className} mx-auto mt-4 p-4 md:p-6 lg:w-[70%] rounded-lg shadow-md ${
+      className={`container ${className} mx-auto mt-4 p-4 md:p-6 md:w-full rounded-lg shadow-md ${
         outline ? 'border-2 border-[var(--dblue-ll)]' : 'border-none'
       }`}
     >
