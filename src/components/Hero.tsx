@@ -86,15 +86,14 @@ const Hero = () => {
             </BasicContainer>
         </AnimatedContainer>
         <AnimatedContainer delay={900}>
-            <BasicContainer className="md:w-full md:border-none">
-                <h3 className="text-2xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4" id="projects">Projects</h3>
-                <div className="flex flex-col md:flex-row gap-2 mb-4">
+            <BasicContainer className="md:border-none">
+                <h3 className="text-2xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4 w-full" id="projects">Projects</h3>
+                <div className="flex flex-col md:flex-row gap-8 md:gap-2 mb-4 w-[100%]">
                     <ProjectsContainer title="OSA Violation Tracker" imageUrl="/osa.png" tags={['React', 'Node.js', 'MongoDB', 'Render.com', 'Google API', 'Express']}>
-                        A full-stack CRUD web application for a school project. It is essentially a tracking system that tracks students and their corresponding violations. It displays their student information, the details of the violation as well as adding and deleting students/violations.
-                        A special project passed to my CFP (Computer Fundamentals and Programming) 01 elective class in order to attain a Grade of 100.
+                        A full-stack CRUD web application for tracking and handling student violations. 
                     </ProjectsContainer>
                     <ProjectsContainer title="Lab Database System" imageUrl="/res.png" tags={['React', 'Node.js', 'MongoDB', 'Render.com', 'Google API', 'Express']}>
-                    The Laboratory Database System is a full-stack web application that streamlines the documentation of laboratory sessions using QR code scanning for quick experiment identification. Students can input session details, which are stored in a database and accessed by teachers through a dedicated dashboard. This project demonstrates my expertise in building functional and user-friendly solutions for educational needs.
+                        A full-stack web application that streamlines the documentation of laboratory sessions using QR code scanning for quick experiment identification. {/*Students can input session details, which are stored in a database and accessed by teachers through a dedicated dashboard. This project demonstrates my expertise in building functional and user-friendly solutions for educational needs. */}
                     </ProjectsContainer>
                     <ProjectsContainer title="Canticum" imageUrl="/canticum.png" tags={['React', 'Bun', 'Vite', 'TailwindCSS', 'DaisyUI', 'Google API', 'Spotify API']}>
                     This is a Spotify web application built with React, Vite, Tailwind (with Daisy UI) and Node. It allows users to log in with their Spotify account with the help of the spotify-web-api-js wrapper. The application can view their top tracks, artists and genres and displays them in a fashionable way.

@@ -1,6 +1,13 @@
 import React, { ReactNode } from 'react';
 import { useSpring, animated } from '@react-spring/web'
 import { MdArrowOutward } from "react-icons/md";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
 
 
 interface ProjectsContainerProps {
@@ -33,7 +40,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
   tags = [],
 }) => {
   return (
-    <div className="container flex flex-col md:w-[420px] md:border-2 md:border-[var(--dblue-l)] md:p-2 rounded-lg shadow-md">
+    <div className="container flex flex-col md:border-2 md:border-[var(--dblue-l)] md:p-2 rounded-lg shadow-md">
     <div className="mb-4 h-[220px] p-2 border-[var(--dblue-ll)] border-2 rounded-lg overflow-hidden">
       <img
         src={imageUrl}
@@ -50,7 +57,18 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           <MdArrowOutward />
           <span className="absolute bottom-[-4px] left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <div className="text-gray-300 text-justify h-full text-sm">{children}</div>
+        <div className="text-gray-300 text-justify h-full text-sm italic w-full">
+          {children}
+          <Accordion type="single" collapsible>
+          <AccordionItem value="item-1">
+            <AccordionTrigger className="font-bold">More Info</AccordionTrigger>
+            <AccordionContent>
+              Yes. It adheres to the WAI-ARIA design pattern.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
+
+        </div>
       </div>
       {tags.length > 0 && (
         <div className="mt-4 flex flex-wrap gap-2">
@@ -94,7 +112,7 @@ const BasicContainer: React.FC<BasicContainerProps> = ({
 }) => {
   return (
     <div
-      className={`container ${className} mx-auto mt-4 p-4 md:p-6 md:w-full rounded-lg shadow-md ${
+      className={`container ${className} mx-auto mt-4 p-4 md:p-6 rounded-lg shadow-md ${
         outline ? 'border-2 border-[var(--dblue-ll)]' : 'border-none'
       }`}
     >
