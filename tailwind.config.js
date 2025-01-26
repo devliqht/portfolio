@@ -54,6 +54,13 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+		backgroundImage: {
+			"radial-dots": "radial-gradient(#2c323d 1px, var(--dblue) 0.5px);",
+			"feathered-edge": "linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0))",
+		},
+		backgroundSize: {
+			"10px": "10px 10px",
+		},
   		keyframes: {
   			'accordion-down': {
   				from: {
