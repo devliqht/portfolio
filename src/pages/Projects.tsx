@@ -1,7 +1,4 @@
 import { AnimatedContainer, BasicContainer, ProjectsContainer } from "@/components/Containers";
-import { Link } from "react-router-dom";
-import { MdArrowOutward } from "react-icons/md";
-
 const projects = [
   {
     title: "OSA Violation Tracker",

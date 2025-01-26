@@ -14,7 +14,6 @@ import { JavascriptOriginal } from 'devicons-react';
 import { ROriginal } from 'devicons-react';
 
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 
 import { Link } from "react-router-dom";
 import { ProjectsContainer, AnimatedContainer, BasicContainer } from "../components/Containers";
