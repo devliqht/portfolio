@@ -43,7 +43,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
       <img
         src={imageUrl}
         alt={title}
-        className="h-full md:w-full object-cover transform transition-transform duration-500 hover:scale-105"
+        className="h-full w-full object-cover transform transition-transform duration-500 hover:scale-105"
       />
     </div>
       <div className="flex flex-col items-start">
