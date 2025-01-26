@@ -8,8 +8,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-
-
 interface ProjectsContainerProps {
   title: string;
   imageUrl: string;
@@ -40,12 +38,12 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
   tags = [],
 }) => {
   return (
-    <div className="container flex flex-col md:border-[1px] md:border-[var(--dblue-ll)] bg-[var(--dblue-l)] p-5 rounded-lg shadow-md">
-    <div className="mb-4 h-[220px] p-2 border-[var(--dblue-ll)] border-2 rounded-lg overflow-hidden w-fit">
+    <div className="container flex flex-col md:w-[32%] md:border-[1px] md:border-[var(--dblue-ll)] bg-[var(--dblue-l)] p-5 rounded-lg shadow-md">
+    <div className="mb-4 h-[220px] w-full p-2 border-[var(--dblue-ll)] border-2 rounded-lg overflow-hidden">
       <img
         src={imageUrl}
         alt={title}
-        className="h-full object-cover transform transition-transform duration-500 hover:scale-105"
+        className="h-full md:w-full object-cover transform transition-transform duration-500 hover:scale-105"
       />
     </div>
       <div className="flex flex-col items-start">

@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Hero from "./pages/Hero.tsx";
-import Projects from "./pages/Projects.tsx";
+import Hero from "@/pages/Hero.tsx";
+import Projects from "@/pages/Projects.tsx";
 
 import Header from "@/components/Header.tsx";
 import ScrollToTop from "@/components/ScrollToTop.tsx";
