@@ -31,7 +31,7 @@ const Hero = () => {
             </div>
         </AnimatedContainer>
         <AnimatedContainer delay={500}>
-            <BasicContainer className="md:w-[70%]">
+            <BasicContainer className="md:w-[70%]" noPadding={false} paddingMobile={true}>
                 <div className="me-description text-white lexend-deca-300 text-left flex flex-col justify-between">
                     <h3 className="font-bold text-2xl mb-2">Hello, world.</h3>
                     <p className="mb-4 text-justify md:text-left">
@@ -50,7 +50,7 @@ const Hero = () => {
             </BasicContainer>
         </AnimatedContainer>
         <AnimatedContainer delay={700}>
-            <BasicContainer outline={false}>
+            <BasicContainer outline={false} paddingMobile={true}>
             <h3 className="text-4xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4">Programming Languages</h3>
                 <div className="flex flex-row md:justify-center gap-4 flex-wrap mb-8">
                     <COriginal size={FaIconSize} color="white"></COriginal>

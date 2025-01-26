@@ -30,6 +30,7 @@ interface BasicContainerProps {
     outline?: boolean;
     className?: string;
     noPadding?: boolean;
+    paddingMobile?: boolean;
 }
 
 const ProjectsContainer: React.FC<ProjectsContainerProps> = ({ 
@@ -108,11 +109,12 @@ const BasicContainer: React.FC<BasicContainerProps> = ({
   children,
   outline = true, 
   className = "",
-  noPadding = false
+  noPadding = false,
+  paddingMobile = false
 }) => {
   return (
     <div
-      className={`container ${className} mx-auto my-4 ${noPadding ? 'p-0' : 'p-0 md:p-6'} rounded-lg shadow-md ${
+      className={`container ${className} mx-auto my-4 ${noPadding ? 'p-0' : `${paddingMobile ? 'p-4 md:p-6' : 'p-0 md:p-6'}`} rounded-lg shadow-md ${
         outline ? 'border-2 border-[var(--dblue-ll)]' : 'border-none'
       }`}
     >
