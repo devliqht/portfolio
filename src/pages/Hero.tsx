@@ -16,7 +16,7 @@ import { ROriginal } from 'devicons-react';
 import { Button } from "@/components/ui/button";
 
 import { Link } from "react-router-dom";
-import { ProjectsContainer, AnimatedContainer, BasicContainer } from "@/components/Containers";
+import { AnimatedContainer, BasicContainer } from "@/components/Containers";
 import { ProjectsRender } from "@/components/ProjectsRender";
 
 const Hero = () => {
