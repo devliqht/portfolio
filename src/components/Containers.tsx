@@ -112,7 +112,7 @@ const BasicContainer: React.FC<BasicContainerProps> = ({
 }) => {
   return (
     <div
-      className={`container ${className} mx-auto my-4 ${noPadding ? 'p-0' : 'p-4 md:p-6'} rounded-lg shadow-md ${
+      className={`container ${className} mx-auto my-4 ${noPadding ? 'p-0' : 'p-0 md:p-6'} rounded-lg shadow-md ${
         outline ? 'border-2 border-[var(--dblue-ll)]' : 'border-none'
       }`}
     >

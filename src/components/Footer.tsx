@@ -10,7 +10,7 @@ const Footer = () => {
     <AnimatedContainer delay={1000}>
     <footer className="bg-[var(--dblue)] text-white py-6">
     <div className="flex flex-col px-4 items-center">
-    <div className="container flex flex-col md:flex-row gap-8 justify-between items-start">
+    <div className="container flex flex-col md:flex-row gap-8 justify-between items-start md:p-6">
         <div className="md:text-left">
           <h4 className="text-2xl md:text-4xl font-bold lexend-deca-700">Matt Cabarrubias</h4>
           <p className="text-md md:text-lg opacity-80">© 2025 All rights reserved.</p>
