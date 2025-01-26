@@ -40,7 +40,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
   tags = [],
 }) => {
   return (
-    <div className="container flex flex-col md:border-2 md:border-[var(--dblue-l)] md:p-2 rounded-lg shadow-md">
+    <div className="container flex flex-col md:border-[1px] md:border-[var(--dblue-ll)] bg-[var(--dblue-l)] p-5 rounded-lg shadow-md">
     <div className="mb-4 h-[220px] p-2 border-[var(--dblue-ll)] border-2 rounded-lg overflow-hidden">
       <img
         src={imageUrl}
@@ -75,7 +75,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="px-2 py-1 text-xs bg-gray-800 text-gray-300 rounded-lg"
+              className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded-lg"
             >
               {tag}
             </span>

@@ -1,8 +1,9 @@
-import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaFigma,  } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaFigma, FaArrowRight  } from "react-icons/fa";
 import { RiTailwindCssFill, RiNotionFill, RiNextjsFill } from "react-icons/ri";
 import { SiVite, SiAdobeaftereffects, SiAdobelightroomclassic, SiCanva, SiTypescript, SiDeno, SiBun } from "react-icons/si";
 import { DiVisualstudio, DiApple, DiGithubBadge, DiTerminal, DiMongodb, DiGoogleCloudPlatform } from "react-icons/di";
 import { IoMdDownload } from "react-icons/io";
+import { MdArrowOutward } from "react-icons/md";
 import { ProjectsContainer, AnimatedContainer, BasicContainer } from "./Containers";
 import { COriginal } from 'devicons-react';
 import { CplusplusOriginal } from 'devicons-react';
@@ -19,7 +20,7 @@ const Hero = () => {
     return (
         <div className="h-full flex flex-col justify-center md:items-center p-4 md:p-6">
         <AnimatedContainer delay={300} className="pl-2 md:pl-0 md:mt-8">
-            <div className="flex flex-col items-start md:justify-center md:items-center">
+            <div className="flex flex-col items-start md:justify-center md:items-center" id="home">
                 <h1 className="text-5xl text-[var(--white)] lexend-deca-700">Hi. Hello. Welcome.</h1>
                 <h2 className="text-2xl text-gray-400 lexend-deca-300 mt-3">Matt Cabarrubias</h2>
                 <img src="/me.png" alt="Me" className="w-64 h-auto rounded-full my-6" />
@@ -86,8 +87,8 @@ const Hero = () => {
             </BasicContainer>
         </AnimatedContainer>
         <AnimatedContainer delay={900}>
-            <BasicContainer className="md:border-none">
-                <h3 className="text-2xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4 w-full" id="projects">Projects</h3>
+            <BasicContainer className="border-none">
+                <h3 className="text-5xl text-[var(--white)] lexend-deca-700 md:text-left mb-4 w-full" id="projects">PROJECTS</h3>
                 <div className="flex flex-col md:flex-row gap-8 md:gap-2 mb-4 w-[100%]">
                     <ProjectsContainer title="OSA Violation Tracker" imageUrl="/osa.png" tags={['React', 'Node.js', 'MongoDB', 'Render.com', 'Google API', 'Express']}>
                         A full-stack CRUD web application for tracking and handling student violations. 
@@ -99,11 +100,15 @@ const Hero = () => {
                     This is a Spotify web application built with React, Vite, Tailwind (with Daisy UI) and Node. It allows users to log in with their Spotify account with the help of the spotify-web-api-js wrapper. The application can view their top tracks, artists and genres and displays them in a fashionable way.
                     </ProjectsContainer>
                 </div>
-                <div className="flex flex-col md:flex-row gap-4 mb-4">
-                    <ProjectsContainer title="Computing Portfolio" imageUrl="/computing.png" tags={['React', 'Deno 2', 'TypeScript', 'Tailwind']}>
-                        A full-stack CRUD web application for a school project. It is essentially a tracking system that tracks students and their corresponding violations. It displays their student information, the details of the violation as well as adding and deleting students/violations.
-                        A special project passed to my CFP (Computer Fundamentals and Programming) 01 elective class in order to attain a Grade of 100.     
-                    </ProjectsContainer>
+                <div className="text-white ibm-plex-mono-medium flex flex-row justify-end">
+                    <a
+                        href="https://github.com"
+                        className="flex flex-row items-center gap-2 text-xl text-gray-400 ibm-plex-mono-medium mb-3 relative group"
+                    >
+                        View More Projects
+                        <MdArrowOutward />
+                        <span className="absolute bottom-[-4px] left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-[240px]"></span>
+                    </a>
                 </div>
             </BasicContainer>
         </AnimatedContainer>
