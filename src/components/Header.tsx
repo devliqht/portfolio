@@ -10,7 +10,7 @@ const Header = () => {
     useEffect(() => {
       const handleScroll = () => {
         const scrollTop = window.scrollY;
-        setIsSticky(scrollTop > 0); // Header becomes "sticky" when scrolling starts
+        setIsSticky(scrollTop > 80); // Header becomes "sticky" when scrolling starts
       };
   
       window.addEventListener("scroll", handleScroll);
@@ -21,23 +21,14 @@ const Header = () => {
         setMenuOpen(!menuOpen);
     };
     return (
-        <header
-            className={`sticky top-0 z-50 p-4 text-white ${
-                isSticky
-                ? "bg-[var(--dblue)] " 
-                : "bg-[var(--dblue)] bg-radial-dots bg-10px " 
-            } transition-all duration-300`}
-            style={{
-                height: isSticky ? "90px" : "135px", // Adjust heights dynamically
-                transition: "height 0.3s ease, mask-image 0.3s ease", // Smooth transition for height and mask
-                maskImage: isSticky
-                  ? "none" // No mask when sticky
-                  : "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))",
-                WebkitMaskImage: isSticky
-                  ? "none" // No mask when sticky
-                  : "linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))",
-              }}
-            >
+        <header className={`sticky top-0 z-50 p-4 text-white bg-[var(--dblue)] ${isSticky ? "bg-[var(--dblue)]" : "bg-radial-dots" } bg-10px`} style={{
+            maskImage: isSticky
+            ? "none" // No mask when sticky
+            : "linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0))",
+          WebkitMaskImage: isSticky
+            ? "none" // No mask when sticky
+            : "linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0))",
+          }}>
             <AnimatedContainer delay={100} from={{opacity: 0, transform: "translateY(-20px)"}} to={{opacity: 1, transform: "translateY(0)"}}>
                 <div className="inner-nav container md:mx-auto flex md:justify-center items-center">
                     <button
