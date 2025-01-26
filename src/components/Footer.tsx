@@ -49,13 +49,13 @@ const Footer = () => {
                 <a href="#github" className="lexend-deca-400 text-gray-500 hover:text-gray-300 text-md border-transparent transition ease-in-out duration-200">
                     GitHub
                 </a>
-                <a href="#about" className="lexend-deca-400 text-gray-500 hover:text-gray-300 text-md border-transparent transition ease-in-out duration-200">
+                <a href="#disord" className="lexend-deca-400 text-gray-500 hover:text-gray-300 text-md border-transparent transition ease-in-out duration-200">
                     Discord
                 </a>
-                <a href="#tech" className="lexend-deca-400 text-gray-500 hover:text-gray-300 text-md border-transparent transition ease-in-out duration-200">
+                <a href="#instagram" className="lexend-deca-400 text-gray-500 hover:text-gray-300 text-md border-transparent transition ease-in-out duration-200">
                     Instagram
                 </a>
-                <a href="#projects" className="lexend-deca-400 text-gray-500 hover:text-gray-300 text-md border-transparent transition ease-in-out duration-200">
+                <a href="#google" className="lexend-deca-400 text-gray-500 hover:text-gray-300 text-md border-transparent transition ease-in-out duration-200">
                     Google
                 </a>
             </div>

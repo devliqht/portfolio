@@ -10,7 +10,7 @@ const Header = () => {
     useEffect(() => {
       const handleScroll = () => {
         const scrollTop = window.scrollY;
-        setIsSticky(scrollTop > 80); // Header becomes "sticky" when scrolling starts
+        setIsSticky(scrollTop > 80); 
       };
   
       window.addEventListener("scroll", handleScroll);
@@ -23,10 +23,10 @@ const Header = () => {
     return (
         <header className={`sticky top-0 z-50 p-4 text-white bg-[var(--dblue)] ${isSticky ? "bg-[var(--dblue)]" : "bg-radial-dots" } bg-10px`} style={{
             maskImage: isSticky
-            ? "none" // No mask when sticky
+            ? "none" 
             : "linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0))",
           WebkitMaskImage: isSticky
-            ? "none" // No mask when sticky
+            ? "none" 
             : "linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0))",
           }}>
             <AnimatedContainer delay={100} from={{opacity: 0, transform: "translateY(-20px)"}} to={{opacity: 1, transform: "translateY(0)"}}>
