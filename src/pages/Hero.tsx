@@ -93,7 +93,7 @@ const Hero = () => {
         <AnimatedContainer delay={900}>
             <BasicContainer className="border-none" noPadding={true}>
                 <ProjectsRender renderCount={3}></ProjectsRender>
-                <div className="text-white ibm-plex-mono-medium flex flex-row justify-end">
+                <div className="text-white ibm-plex-mono-medium flex flex-row justify-start">
                     <Link
                         to="/projects"
                         className="flex flex-row items-center gap-2 text-xl text-gray-400 ibm-plex-mono-medium mb-3 relative group"
