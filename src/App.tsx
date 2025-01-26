@@ -1,12 +1,21 @@
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header.tsx";
-import Hero from "./components/Hero.tsx";
+import Hero from "./pages/Hero.tsx";
+import './App.css';
+import Projects from "./pages/Projects.tsx";
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <Hero></Hero>
+    <Router>
+      <div>
+        <Header></Header>
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </div>
+    </Router>
     </>
   )
 }

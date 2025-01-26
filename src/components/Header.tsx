@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { AnimatedContainer } from "./Containers";
-
 import { MdImportContacts } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -32,9 +31,9 @@ const Header = () => {
                         <h1 className="lexend-deca-400">Matt</h1>
                         </div>
                         <div className="flex gap-8">
-                            <a href="#home" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
+                            <Link to="/" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
                                 Home
-                            </a>
+                            </Link>
                             <a href="#about" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
                                 About
                             </a>

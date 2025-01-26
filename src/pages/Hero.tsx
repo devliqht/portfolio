@@ -4,7 +4,7 @@ import { SiVite, SiAdobeaftereffects, SiAdobelightroomclassic, SiCanva, SiTypesc
 import { DiVisualstudio, DiApple, DiGithubBadge, DiTerminal, DiMongodb, DiGoogleCloudPlatform } from "react-icons/di";
 import { IoMdDownload } from "react-icons/io";
 import { MdArrowOutward } from "react-icons/md";
-import { ProjectsContainer, AnimatedContainer, BasicContainer } from "./Containers";
+import { ProjectsContainer, AnimatedContainer, BasicContainer } from "../components/Containers";
 import { COriginal } from 'devicons-react';
 import { CplusplusOriginal } from 'devicons-react';
 import { CsharpOriginal } from 'devicons-react';
@@ -12,7 +12,9 @@ import { PythonOriginal } from 'devicons-react';
 import { JavaOriginal } from 'devicons-react';
 import { JavascriptOriginal } from 'devicons-react';
 import { ROriginal } from 'devicons-react';
-import { Button } from "./ui/button";
+import { Button } from "../components/ui/button";
+
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {
@@ -101,14 +103,14 @@ const Hero = () => {
                     </ProjectsContainer>
                 </div>
                 <div className="text-white ibm-plex-mono-medium flex flex-row justify-end">
-                    <a
-                        href="https://github.com"
+                    <Link
+                        to="/projects"
                         className="flex flex-row items-center gap-2 text-xl text-gray-400 ibm-plex-mono-medium mb-3 relative group"
                     >
                         View More Projects
                         <MdArrowOutward />
                         <span className="absolute bottom-[-4px] left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-[240px]"></span>
-                    </a>
+                    </Link>
                 </div>
             </BasicContainer>
         </AnimatedContainer>
