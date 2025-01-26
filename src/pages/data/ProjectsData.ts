@@ -7,6 +7,13 @@ export interface Project {
 
 const projects: Project[] = [
     {
+      title: "Portfolio",
+      imageUrl: "/portfolio.png",
+      tags: ["React", "TypeScript", "Bun", "Vite", "TailwindCSS", "ShadcnUI", "React Router", "Vercel"],
+      description:
+        "A personalized portfolio website built with React, TypeScript, Vite and Bun. It uses TailwindCSS and some Shadcn UI components powered with React Router.",
+    },
+    {
       title: "OSA Violation Tracker",
       imageUrl: "/osa.png",
       tags: ["React", "Node.js", "MongoDB", "Render.com", "Google API", "Express", "React Router"],
@@ -21,16 +28,9 @@ const projects: Project[] = [
     {
       title: "Canticum",
       imageUrl: "/canticum.png",
-      tags: ["React", "Bun", "Vite", "TailwindCSS", "DaisyUI", "Google API", "Spotify API"],
+      tags: ["React", "Bun", "Vite", "TailwindCSS", "DaisyUI", "Spotify API"],
       description:
         "This is a Spotify web application built with React, Vite, Tailwind (with DaisyUI), and Node. It allows users to log in with their Spotify account using the spotify-web-api-js wrapper. The application displays their top tracks, artists, and genres in a fashionable way.",
-    },
-    {
-      title: "Portfolio",
-      imageUrl: "/portfolio.png",
-      tags: ["React", "TypeScript", "Bun", "Vite", "TailwindCSS", "ShadcnUI", "React Router"],
-      description:
-        "A personalized portfolio website built with React, TypeScript, Vite and Bun. It uses TailwindCSS and some Shadcn UI components powered with React Router.",
     },
     {
       title: "Misinformation Website",
