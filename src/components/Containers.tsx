@@ -41,11 +41,11 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
 }) => {
   return (
     <div className="container flex flex-col md:border-[1px] md:border-[var(--dblue-ll)] bg-[var(--dblue-l)] p-5 rounded-lg shadow-md">
-    <div className="mb-4 h-[220px] p-2 border-[var(--dblue-ll)] border-2 rounded-lg overflow-hidden">
+    <div className="mb-4 h-[220px] p-2 border-[var(--dblue-ll)] border-2 rounded-lg overflow-hidden w-fit">
       <img
         src={imageUrl}
         alt={title}
-        className="h-full w-full object-cover transform transition-transform duration-500 hover:scale-105"
+        className="h-full object-cover transform transition-transform duration-500 hover:scale-105"
       />
     </div>
       <div className="flex flex-col items-start">
@@ -57,7 +57,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           <MdArrowOutward />
           <span className="absolute bottom-[-4px] left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <div className="text-gray-300 text-justify h-full text-sm italic w-full">
+        <div className="text-gray-300 text-justify h-full text-sm italic ">
           {children}
           <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
