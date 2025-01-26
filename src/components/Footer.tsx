@@ -8,9 +8,14 @@ const Footer = () => {
     const FooterIconSize: number = 35;
   return (
     <AnimatedContainer delay={1000}>
-    <footer className="bg-[var(--dblue)] text-white py-6">
+    <footer className="bg-radial-dots bg-10px text-white py-8"
+        style={{
+            maskImage: "linear-gradient(to top, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0))",
+            WebkitMaskImage: "linear-gradient(to top, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0))",
+        }}
+    >
     <div className="flex flex-col px-4 items-center">
-    <div className="container flex flex-col md:flex-row gap-8 justify-between items-start md:p-6">
+    <div className="container flex flex-col md:flex-row gap-8 justify-between items-start pt-8 md:p-6">
         <div className="md:text-left">
           <h4 className="text-2xl md:text-4xl font-bold lexend-deca-700">Matt Cabarrubias</h4>
           <p className="text-md md:text-lg opacity-80">© 2025 All rights reserved. Made with love ♥︎</p>
