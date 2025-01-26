@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="container flex flex-col md:flex-row gap-8 justify-between items-start md:p-6">
         <div className="md:text-left">
           <h4 className="text-2xl md:text-4xl font-bold lexend-deca-700">Matt Cabarrubias</h4>
-          <p className="text-md md:text-lg opacity-80">© 2025 All rights reserved.</p>
+          <p className="text-md md:text-lg opacity-80">© 2025 All rights reserved. Made with love ♥︎</p>
           <div className="flex flex-row my-4 gap-2">
             <FaReact size={FooterIconSize}></FaReact>
             <FaJs size={FooterIconSize}></FaJs>
