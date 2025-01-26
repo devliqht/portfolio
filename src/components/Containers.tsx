@@ -57,7 +57,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           <MdArrowOutward />
           <span className="absolute bottom-[-4px] left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <div className="text-gray-300 text-justify h-full text-sm italic ">
+        <div className="text-gray-300 text-justify h-full text-sm italic w-full">
           {children}
           <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
