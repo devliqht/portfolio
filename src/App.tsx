@@ -3,6 +3,7 @@ import Hero from "@/pages/Hero.tsx";
 import Projects from "@/pages/Projects.tsx";
 
 import Header from "@/components/Header.tsx";
+import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop.tsx";
 import './App.css';
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Hero />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
+        <Footer></Footer>
       </div>
     </Router>
     </>

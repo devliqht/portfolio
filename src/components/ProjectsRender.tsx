@@ -9,7 +9,7 @@ interface ProjectsRenderProps {
 const ProjectsRender: React.FC<ProjectsRenderProps> = ({renderCount = 0, animateDelay = 0}) => {
   return (
       <AnimatedContainer delay={animateDelay}>
-        <BasicContainer className="border-none mt-0 p-0">
+        <BasicContainer className="border-none" noPadding={true}>
           <h3 className="text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 md:text-left mb-4 w-full" id="projects">
             PROJECTS
           </h3>

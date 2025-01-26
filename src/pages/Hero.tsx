@@ -91,7 +91,7 @@ const Hero = () => {
             </BasicContainer>
         </AnimatedContainer>
         <AnimatedContainer delay={900}>
-            <BasicContainer className="border-none">
+            <BasicContainer className="border-none" noPadding={true}>
                 <ProjectsRender renderCount={3}></ProjectsRender>
                 <div className="text-white ibm-plex-mono-medium flex flex-row justify-end">
                     <Link
