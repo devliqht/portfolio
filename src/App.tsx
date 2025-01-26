@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header.tsx";
 import Hero from "./pages/Hero.tsx";
-import './App.css';
 import Projects from "./pages/Projects.tsx";
+import './App.css';
 
 function App() {
   return (

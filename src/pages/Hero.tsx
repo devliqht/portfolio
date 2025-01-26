@@ -1,10 +1,10 @@
-import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaFigma, FaArrowRight  } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaFigma } from "react-icons/fa";
 import { RiTailwindCssFill, RiNotionFill, RiNextjsFill } from "react-icons/ri";
 import { SiVite, SiAdobeaftereffects, SiAdobelightroomclassic, SiCanva, SiTypescript, SiDeno, SiBun } from "react-icons/si";
 import { DiVisualstudio, DiApple, DiGithubBadge, DiTerminal, DiMongodb, DiGoogleCloudPlatform } from "react-icons/di";
 import { IoMdDownload } from "react-icons/io";
 import { MdArrowOutward } from "react-icons/md";
-import { ProjectsContainer, AnimatedContainer, BasicContainer } from "../components/Containers";
+
 import { COriginal } from 'devicons-react';
 import { CplusplusOriginal } from 'devicons-react';
 import { CsharpOriginal } from 'devicons-react';
@@ -12,10 +12,12 @@ import { PythonOriginal } from 'devicons-react';
 import { JavaOriginal } from 'devicons-react';
 import { JavascriptOriginal } from 'devicons-react';
 import { ROriginal } from 'devicons-react';
-import { Button } from "../components/ui/button";
+
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 
 import { Link } from "react-router-dom";
-
+import { ProjectsContainer, AnimatedContainer, BasicContainer } from "../components/Containers";
 
 const Hero = () => {
     const FaIconSize: number = 50;
@@ -49,7 +51,7 @@ const Hero = () => {
         </AnimatedContainer>
         <AnimatedContainer delay={700}>
             <BasicContainer outline={false}>
-            <h3 className="text-2xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4">Programming Languages</h3>
+            <h3 className="text-4xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4">Programming Languages</h3>
                 <div className="flex flex-row md:justify-center gap-4 flex-wrap mb-8">
                     <COriginal size={FaIconSize} color="white"></COriginal>
                     <CplusplusOriginal size={FaIconSize} color="white"></CplusplusOriginal>
@@ -59,7 +61,7 @@ const Hero = () => {
                     <PythonOriginal size={FaIconSize} color="white"></PythonOriginal>
                     <ROriginal size={FaIconSize} color="white"></ROriginal>
                 </div>
-            <h3 className="text-2xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4">Web</h3>
+            <h3 className="text-4xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4">Web</h3>
                 <div className="flex flex-row md:justify-center mb-8 gap-4 flex-wrap">
                     <FaHtml5 size={FaIconSize} color="white"/>
                     <FaCss3 size={FaIconSize} color="white" />
@@ -73,7 +75,7 @@ const Hero = () => {
                     <RiTailwindCssFill size={FaIconSize} color="white" />
                     <FaFigma size={FaIconSize} color="white" />
                 </div>
-                <h3 className="text-2xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4">Tools</h3>
+                <h3 className="text-4xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4">Tools</h3>
                 <div className="flex flex-row md:justify-center gap-4 flex-wrap mb-4">
                     <DiVisualstudio size={FaIconSize} color="white"/>
                     <DiApple size={FaIconSize} color="white"/>
