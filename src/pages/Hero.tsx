@@ -1,26 +1,14 @@
-import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaFigma } from "react-icons/fa";
-import { RiTailwindCssFill, RiNotionFill, RiNextjsFill } from "react-icons/ri";
-import { SiVite, SiAdobeaftereffects, SiAdobelightroomclassic, SiCanva, SiTypescript, SiDeno, SiBun } from "react-icons/si";
-import { DiVisualstudio, DiApple, DiGithubBadge, DiTerminal, DiMongodb, DiGoogleCloudPlatform } from "react-icons/di";
+import { DiGithubBadge } from "react-icons/di";
 import { IoMdDownload } from "react-icons/io";
 import { MdArrowOutward } from "react-icons/md";
 
-import { COriginal } from 'devicons-react';
-import { CplusplusOriginal } from 'devicons-react';
-import { CsharpOriginal } from 'devicons-react';
-import { PythonOriginal } from 'devicons-react';
-import { JavaOriginal } from 'devicons-react';
-import { JavascriptOriginal } from 'devicons-react';
-import { ROriginal } from 'devicons-react';
-
 import { Button } from "@/components/ui/button";
-
 import { Link } from "react-router-dom";
 import { AnimatedContainer, BasicContainer } from "@/components/Containers";
 import { ProjectsRender } from "@/components/ProjectsRender";
+import SkillShowcase from "@/components/Skills";
 
 const Hero = () => {
-    const FaIconSize: number = 50;
     return (
         <div className="h-full flex flex-col justify-center md:items-center p-4 md:p-6">
         <AnimatedContainer delay={300} className="pl-2 md:pl-0">
@@ -50,45 +38,7 @@ const Hero = () => {
             </BasicContainer>
         </AnimatedContainer>
         <AnimatedContainer delay={700}>
-            <BasicContainer outline={false} paddingMobile={true}>
-            <h3 className="text-4xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4">Programming Languages</h3>
-                <div className="flex flex-row md:justify-center gap-4 flex-wrap mb-8">
-                    <COriginal size={FaIconSize} color="white"></COriginal>
-                    <CplusplusOriginal size={FaIconSize} color="white"></CplusplusOriginal>
-                    <CsharpOriginal size={FaIconSize} color="white"></CsharpOriginal>
-                    <JavascriptOriginal size={FaIconSize} color="white"></JavascriptOriginal>
-                    <JavaOriginal size={FaIconSize} color="white"></JavaOriginal>
-                    <PythonOriginal size={FaIconSize} color="white"></PythonOriginal>
-                    <ROriginal size={FaIconSize} color="white"></ROriginal>
-                </div>
-            <h3 className="text-4xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4">Web</h3>
-                <div className="flex flex-row md:justify-center mb-8 gap-4 flex-wrap">
-                    <FaHtml5 size={FaIconSize} color="white"/>
-                    <FaCss3 size={FaIconSize} color="white" />
-                    <SiTypescript size={FaIconSize} color="white" />
-                    <FaNodeJs size={FaIconSize} color="white" />
-                    <SiDeno size={FaIconSize} color="white" />
-                    <SiBun size={FaIconSize} color="white" />
-                    <FaReact size={FaIconSize} color="white" />
-                    <RiNextjsFill size={FaIconSize} color="white" />
-                    <SiVite size={FaIconSize} color="white" />
-                    <RiTailwindCssFill size={FaIconSize} color="white" />
-                    <FaFigma size={FaIconSize} color="white" />
-                </div>
-                <h3 className="text-4xl text-gray-300 ibm-plex-mono-medium md:text-center mb-4">Tools</h3>
-                <div className="flex flex-row md:justify-center gap-4 flex-wrap mb-4">
-                    <DiVisualstudio size={FaIconSize} color="white"/>
-                    <DiApple size={FaIconSize} color="white"/>
-                    <DiGithubBadge size={FaIconSize} color="white"/>
-                    <DiTerminal size={FaIconSize} color="white"/>
-                    <DiMongodb size={FaIconSize} color="white"/>
-                    <DiGoogleCloudPlatform size={FaIconSize} color="white"/>
-                    <SiAdobeaftereffects size={FaIconSize} color="white"/>
-                    <SiAdobelightroomclassic size={FaIconSize} color="white"/>
-                    <SiCanva size={FaIconSize} color="white"/>
-                    <RiNotionFill size={FaIconSize} color="white"/>
-                </div>
-            </BasicContainer>
+        <SkillShowcase></SkillShowcase>
         </AnimatedContainer>
         <AnimatedContainer delay={900}>
             <BasicContainer className="border-none">
