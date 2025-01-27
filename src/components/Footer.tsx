@@ -3,6 +3,7 @@ import { AnimatedContainer } from "./Containers";
 import { FaReact, FaJs } from "react-icons/fa";
 import { RiTailwindCssFill, RiVercelFill } from "react-icons/ri";
 import { SiTypescript, SiBun, SiVite, SiShadcnui } from "react-icons/si";
+import { MdArrowOutward } from "react-icons/md";
 
 const Footer = () => {
     const FooterIconSize: number = 35;
@@ -29,6 +30,14 @@ const Footer = () => {
             <SiShadcnui size={FooterIconSize}></SiShadcnui>
             <RiVercelFill size={FooterIconSize}></RiVercelFill>
           </div>
+            <a
+                href="https://github.com/devliqht/portfolio"
+                className="flex flex-row items-center gap-2 text-md text-gray-400 ibm-plex-mono-medium mb-3 relative group"
+            >
+                View Repository on GitHub
+                <MdArrowOutward />
+                <span className="absolute bottom-[-4px] left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-[240px]"></span>
+            </a>
         </div>
         <div className="flex flex-row gap-8">
             <div className="flex flex-col gap-2">
