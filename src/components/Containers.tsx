@@ -13,6 +13,7 @@ interface ProjectsContainerProps {
   imageUrl: string;
   children: ReactNode;
   tags?: string[];
+  link?: string;
 }
 
 interface AnimatedContainerProps {
@@ -38,6 +39,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
   imageUrl, 
   children, 
   tags = [],
+  link,
 }) => {
   return (
     <div className="container flex flex-col md:w-[32%] md:border-[1px] md:border-[var(--dblue-ll)] bg-[var(--dblue-l)] p-5 rounded-lg shadow-md">
@@ -50,7 +52,9 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
     </div>
       <div className="flex flex-col items-start">
         <a
-          href="https://github.com"
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex flex-row items-center gap-2 text-xl text-gray-400 ibm-plex-mono-medium mb-3 relative group"
         >
           {title}

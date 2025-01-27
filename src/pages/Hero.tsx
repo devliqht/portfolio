@@ -31,7 +31,12 @@ const Hero = () => {
                         driven by curiosity and a desire to solve problems effectively.
                     </p>
                     <div className="flex flex-row gap-4">
-                    <Button className="w-fit" variant="outline"><DiGithubBadge></DiGithubBadge>GitHub Profile</Button>
+                    <a href="https://github.com/devliqht" target="_blank" rel="noopener noreferrer">
+                        <Button className="w-fit" variant="outline">
+                            <DiGithubBadge />
+                            GitHub Profile
+                        </Button>
+                    </a>
                     <Button className="w-fit" variant="outline"><IoMdDownload></IoMdDownload>Download CV</Button>
                     </div>
                 </div>

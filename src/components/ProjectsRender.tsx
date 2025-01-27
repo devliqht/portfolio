@@ -20,6 +20,7 @@ const ProjectsRender: React.FC<ProjectsRenderProps> = ({renderCount = 0, animate
                 title={project.title}
                 imageUrl={project.imageUrl}
                 tags={project.tags}
+                link={project.link}
               >
                 {project.description}
               </ProjectsContainer>
