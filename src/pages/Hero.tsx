@@ -55,6 +55,11 @@ const Hero = () => {
                 </div>
             </BasicContainer>
         </AnimatedContainer>
+        <AnimatedContainer delay={1000}>
+            <BasicContainer>
+                <h1>Contact Me</h1>
+            </BasicContainer>
+        </AnimatedContainer>
         </div>
     )
 }

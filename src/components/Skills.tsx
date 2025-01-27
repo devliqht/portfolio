@@ -14,7 +14,11 @@ import { DiVisualstudio, DiApple, DiGithubBadge, DiTerminal, DiMongodb, DiGoogle
 import { BasicContainer } from './Containers';
 import { Tooltip } from "react-tooltip";
 
-const SkillShowcase = () => {
+interface SkillShowcaseProps {
+  centred?: boolean;
+}
+
+const SkillShowcase: React.FC<SkillShowcaseProps> = ({centred = true}) => {
     const IconSize: number = 55;
     const categories = [
       {
@@ -63,11 +67,11 @@ const SkillShowcase = () => {
     return (
       <BasicContainer outline={false} paddingMobile={true}>
         {categories.map((category, index) => (
-          <div key={index} className="flex flex-col md:items-center">
+          <div key={index} className={`flex flex-col ${centred ? 'md:items-center': 'items-left'}`}>
             <h3 className="text-3xl text-gray-300 lexend-deca-400 border-b-[1px] md:w-fit border-gray-700 md:text-center pb-3 mb-4">
               {category.title}
             </h3>
-            <div className="flex flex-row md:justify-center gap-4 flex-wrap mb-8">
+            <div className={`flex flex-row md:items-center ${centred ? 'justify-center' : 'justify-start'} gap-4 flex-wrap mb-8`}>
               {category.items.map((item, i) => (
                 <div key={i} className="flex flex-col items-center gap-2 transition-transform hover:scale-110">
                   <div className="text-6xl text-white" data-tooltip-id={`tooltip-${item.name}`}>

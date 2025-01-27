@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "@/pages/Hero.tsx";
 import Projects from "@/pages/Projects.tsx";
+import Tech from "@/pages/Tech";
 
 import Header from "@/components/Header.tsx";
 import Footer from "@/components/Footer";
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/tech" element={<Tech />} />
         </Routes>
         <Footer></Footer>
       </div>
