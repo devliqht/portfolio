@@ -64,9 +64,9 @@ const Header = () => {
                             <Link to="/" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
                                 Home
                             </Link>
-                            <a href="#about" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
+                            <Link to="/about" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
                                 About
-                            </a>
+                            </Link>
                             <Link to="/tech" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
                                 Tech
                             </Link>

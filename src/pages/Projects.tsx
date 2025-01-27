@@ -4,7 +4,7 @@ import projects from "./data/ProjectsData";
 const Projects = () => {
     return (
         <div className="h-full flex flex-col justify-center md:items-center p-4 md:p-6">
-            <ProjectsRender renderCount={projects.length}></ProjectsRender>
+            <ProjectsRender renderCount={projects.length} animateDelay={100}></ProjectsRender>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "@/pages/Hero.tsx";
 import Projects from "@/pages/Projects.tsx";
 import Tech from "@/pages/Tech";
+import About from "@/pages/About";
 
 import Header from "@/components/Header.tsx";
 import Footer from "@/components/Footer";
@@ -17,7 +18,7 @@ function App() {
         <ScrollToTop></ScrollToTop>
         <Routes>
           <Route path="/" element={<Hero />} />
-          <Route path="/about" element={<Hero />} />
+          <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/tech" element={<Tech />} />
         </Routes>
