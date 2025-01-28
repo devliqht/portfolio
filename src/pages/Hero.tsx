@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { AnimatedContainer, BasicContainer } from "@/components/Containers";
 import { ProjectsRender } from "@/components/ProjectsRender";
 import SkillShowcase from "@/components/Skills";
-import ContactForm from "@/components/ContactForm";
 
 const Hero = () => {
     return (
@@ -46,15 +45,6 @@ const Hero = () => {
         <AnimatedContainer delay={900}>
             <BasicContainer className="border-none">
                 <ProjectsRender renderCount={3}></ProjectsRender>
-            </BasicContainer>
-        </AnimatedContainer>
-        <AnimatedContainer delay={1000}>
-            <BasicContainer className="border-none">
-            <h3 className="text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 md:text-left mb-2 w-full" id="projects">
-                CONTACT ME
-            </h3>
-            <h2 className="text-2xl text-gray-400 lexend-deca-300">I'd be happy to hear from you!</h2>
-            <ContactForm></ContactForm>
             </BasicContainer>
         </AnimatedContainer>
         </div>
