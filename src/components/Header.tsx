@@ -84,7 +84,7 @@ const Header = () => {
             {/* Mobile Navigation */}
             {menuOpen && (
                 <AnimatedContainer from={{opacity: 0, transform: "translateY(-20px)"}} to={{opacity: 1, transform: "translateY(0)"}}>
-                <div className="transition ease-in-out duration-200 md:hidden mt-2 flex flex-col space-y-2 p-4 rounded-xl">
+                <div className="transition ease-in-out duration-200 md:hidden flex flex-col space-y-2 py-4 rounded-xl">
                     <Link
                         to="/"
                         className="text-white hover:text-gray-300 ibm-plex-mono-medium text-xl border-b-[1px] border-gray-600 py-4"
