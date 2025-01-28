@@ -30,13 +30,10 @@ const About = () => {
                     <h2 className="text-2xl text-gray-400 lexend-deca-300">Education</h2>
                     <EducationContainer course="Bachelor of Science in Computer Science" school="University of San Carlos" year="2024-2027"></EducationContainer>
                     <EducationContainer course="Senior High School - STEM" school="University of San Carlos" year="2022-2024"></EducationContainer>
+                    <EducationContainer course="High School" school="Don Bosco Technical College" year="2018-2022"></EducationContainer>
                     
                     </div>
-                    <img src="/me.png" alt="Me" className="w-32 md:w-64 h-auto rounded-lg mb-4" />
                 </div>
-    
-
-
                 </BasicContainer>
             </AnimatedContainer> 
         </div>
