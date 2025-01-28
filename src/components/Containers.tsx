@@ -1,6 +1,7 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { useSpring, animated } from '@react-spring/web'
 import { MdArrowOutward } from "react-icons/md";
+
 import {
   Accordion,
   AccordionContent,
@@ -44,14 +45,21 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
   tags = [],
   link,
 }) => {
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
   return (
     <div className="container flex flex-col md:w-[32%] md:border-[1px] md:border-[var(--dblue-ll)] bg-[var(--dblue-l)] p-5 rounded-lg shadow-md">
     <div className="mb-4 h-[220px] w-full p-2 border-[var(--dblue-ll)] border-2 rounded-lg overflow-hidden">
-      <img
-        src={imageUrl}
-        alt={title}
-        className="h-full w-full object-cover transform transition-transform duration-500 hover:scale-105"
-      />
+      {!isImageLoaded && (
+          <div className="h-full w-full bg-gray-300 animate-pulse rounded-lg"></div>
+        )}
+        <img
+          src={imageUrl}
+          alt={title}
+          className={`h-full w-full object-cover transform transition-transform duration-500 hover:scale-105 ${
+            isImageLoaded ? "opacity-100" : "opacity-0"
+          }`}
+          onLoad={() => setIsImageLoaded(true)}
+        />
     </div>
       <div className="flex flex-col items-start">
         <a
