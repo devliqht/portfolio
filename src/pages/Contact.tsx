@@ -5,7 +5,7 @@ import ContactForm from '@/components/ContactForm';
 const Contact: React.FC = () => {
   return (
     <AnimatedContainer delay={100}>
-        <BasicContainer className="border-none">
+        <BasicContainer className="border-none" paddingMobile={true}>
         <h3 className="text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 md:text-left mb-2 w-full" id="projects">
             CONTACT ME
         </h3>
