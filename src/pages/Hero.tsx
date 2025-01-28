@@ -61,8 +61,10 @@ const Hero = () => {
             </BasicContainer>
         </AnimatedContainer>
         <AnimatedContainer delay={1000}>
-            <BasicContainer>
-                <h1>Contact Me</h1>
+            <BasicContainer className="border-none">
+            <h3 className="text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 md:text-left mb-4 w-full" id="projects">
+                CONTACT ME
+            </h3>
             </BasicContainer>
         </AnimatedContainer>
         </div>
