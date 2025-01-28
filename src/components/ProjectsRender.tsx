@@ -1,11 +1,10 @@
-import { AnimatedContainer, BasicContainer, ProjectsContainer } from "@/components/Containers";
+import { BasicContainer, ProjectsContainer } from "@/components/Containers";
 import { Project, projects } from '@/pages/data/ProjectsData';
 import { Link } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 
 interface ProjectsRenderProps {
     renderCount: number;
-    animateDelay?: number;
     title?: string;
     data?: Project[];
     showMore?: boolean;
@@ -13,13 +12,11 @@ interface ProjectsRenderProps {
 
 const ProjectsRender: React.FC<ProjectsRenderProps> = ({
   renderCount = 0, 
-  animateDelay = 0, 
   title = "PROJECTS", 
   data = projects,
   showMore = true,
 }) => {
   return (
-      <AnimatedContainer delay={animateDelay}>
         <BasicContainer className="border-none" noPadding={true}>
         <h3
           className={`relative flex items-center text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 ${showMore ? '' : 'mb-8'} md:text-left w-full`}
@@ -56,7 +53,6 @@ const ProjectsRender: React.FC<ProjectsRenderProps> = ({
           </div>
           <div className="p-4"></div>
         </BasicContainer>
-      </AnimatedContainer>
   );
 };
 

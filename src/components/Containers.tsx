@@ -1,5 +1,5 @@
 import React, { ReactNode, useState } from 'react';
-import { useSpring, animated } from '@react-spring/web'
+import { animated, useSpring } from '@react-spring/web'
 import { MdArrowOutward } from "react-icons/md";
 
 import {
@@ -20,13 +20,13 @@ interface ProjectsContainerProps {
 }
 
 interface AnimatedContainerProps {
-    children: React.ReactNode; 
-    from?: object;
-    to?: object; 
-    config?: object; 
-    duration?: number;
-    delay?: number;
-    className?: string;
+  children: React.ReactNode; 
+  from?: object;
+  to?: object; 
+  config?: object; 
+  duration?: number;
+  delay?: number;
+  className?: string;
 }
 
 interface BasicContainerProps {
@@ -102,23 +102,22 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
 };
 
 const AnimatedContainer: React.FC<AnimatedContainerProps> = ({
-    children,
-    from = { opacity: 0, transform: "translateY(20px)" },
-    to = { opacity: 1, transform: "translateY(0)" },
-    config = { tension: 80, friction: 20 }, 
-    duration,
-    delay = 0, 
-    className = "",
-  }) => {
-    const animation = useSpring(
-      duration
-        ? { from, to, config: { duration }, delay } 
-        : { from, to, config, delay }
-    );
-  
-    return <animated.div style={animation} className={`${className} justify-center w-full`}>{children}</animated.div>;
-};
+  children,
+  from = { opacity: 0, transform: "translateY(20px)" },
+  to = { opacity: 1, transform: "translateY(0)" },
+  config = { tension: 80, friction: 20 }, 
+  duration,
+  delay = 0, 
+  className = "",
+}) => {
+  const animation = useSpring(
+    duration
+      ? { from, to, config: { duration }, delay } 
+      : { from, to, config, delay }
+  );
 
+  return <animated.div style={animation} className={`${className} justify-center w-full`}>{children}</animated.div>;
+};
 
 const BasicContainer: React.FC<BasicContainerProps> = ({
   children,

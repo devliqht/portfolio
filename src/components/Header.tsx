@@ -63,7 +63,7 @@ const Header = () => {
             </AnimatedContainer>
             {menuOpen && (
                 <AnimatedContainer from={{opacity: 0, transform: "translateY(-20px)"}} to={{opacity: 1, transform: "translateY(0)"}}>
-                <div className="transition ease-in-out duration-200 md:hidden flex flex-col space-y-2 py-4 rounded-xl">
+                <div className="md:hidden flex flex-col space-y-2 py-4 rounded-xl">
                     {links.map((link) => (
                         <NavLink key={link.to} to={link.to} label={link.label} mobile={true} onClick={() => setMenuOpen(false)}/>
                     ))}
