@@ -51,6 +51,7 @@ const About = () => {
                                     Video Editing <br /> 
                                     UI/UX Design <br /> 
                                     Graphic Design <br /> 
+                                    Photography <br /> 
                                     Color Grading <br /> 
                                     Systems Programming (C, C++) <br /> 
                                 </p>

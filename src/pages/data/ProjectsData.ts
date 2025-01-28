@@ -54,5 +54,35 @@ const projects: Project[] = [
         "A simple genshin damage calculator that worked back in 2021. It used a formula provided by the Keqing discord server, now outdated. It uses Vanilla HTML, CSS and JavaScript to do the calculations. It uses Bootstrap for some of its component styles.",
     },
   ];
+
+  const UIDesigns: Project[] = [
+    {
+      title: "ISMIS Conceptual",
+      imageUrl: "/ismis.png",
+      tags: ["HTML", "CSS"],
+      link: "https://github.com/devliqht/ismis-matt",
+      description:
+        "A redesign of the USC ISMIS with vanilla html and css. It features a more glassy and modern design with hover animation styles and padding.",
+    },
+    {
+      title: "DBTC Conceptual",
+      imageUrl: "/dbtc.png",
+      tags: ["HTML", "CSS"],
+      link: "https://github.com/devliqht/school-automate",
+      description:
+        "The DBTC school automate UI redesigned into a more modern, minimalistic and boxy style.",
+    },
+    {
+      title: "Genshin Artifact Simulator UI",
+      imageUrl: "/genshinui.png",
+      tags: ["HTML", "CSS", "SASS"],
+      link: "https://github.com/devliqht/genshin-artifact-simulator",
+      description:
+        "A web redesign of the old Genshin Artifact UI dated back in 2021. Its supposed to be featured an imaginary artifact creator.",
+    },
+  ]
   
-  export default projects;
+  export {
+    projects,
+    UIDesigns
+  };

@@ -8,6 +8,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
+
 interface ProjectsContainerProps {
   title: string;
   imageUrl: string;
