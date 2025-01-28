@@ -60,20 +60,25 @@ const Header = () => {
                         <h3 className="lexend-deca-400 text-xl">Matt Cabarrubias</h3>
                         </div>
                         <div className="flex gap-8">
-                            <Link to="/" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
+                            <Link to="/" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200 relative group">
                                 Home
+                                <span className="absolute bottom-4 left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
                             </Link>
-                            <Link to="/about" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
+                            <Link to="/about" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200 relative group">
                                 About
+                                <span className="absolute bottom-4 left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
                             </Link>
-                            <Link to="/tech" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
+                            <Link to="/tech" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200 relative group">
                                 Tech
+                                <span className="absolute bottom-4 left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
                             </Link>
-                            <Link to="/projects" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
+                            <Link to="/projects" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200 relative group">
                                 Projects
+                                <span className="absolute bottom-4 left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
                             </Link>
-                            <Link to="/contact" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
+                            <Link to="/contact" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200 relative group">
                                 Contact
+                                <span className="absolute bottom-4 left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
                             </Link>
                         </div>
                     </nav>
