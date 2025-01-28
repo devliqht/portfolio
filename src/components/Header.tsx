@@ -31,12 +31,12 @@ const Header = () => {
         setMenuOpen(!menuOpen);
     };
     return (
-        <header className={`sticky top-0 z-50 p-4 text-white ${isMobile ? 'shadow-xl' : ''} bg-[var(--dblue)] ${isSticky ? "bg-[var(--dblue)]" : "bg-radial-dots" } bg-10px`}
+        <header className={`sticky top-0 z-50 p-4 text-white ${isMobile ? 'shadow-xl' : ''} bg-[var(--dblue)] ${isSticky ? "bg-[var(--dblue)]" : "bg-radial-dots" } bg-10px md:p-6`}
         style={{
             maskImage:
               isSticky || menuOpen
                 ? "none"
-                : "linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0))",
+                : "linear-gradient(to bottom, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0))",
             WebkitMaskImage:
               isSticky || menuOpen
                 ? "none"
@@ -57,8 +57,8 @@ const Header = () => {
                     </button>
                     <nav className="hidden md:flex md:gap-8 justify-between w-full mx-8">
                         <div className="flex flex-row gap-2 items-center">
-                        <MdImportContacts size={40} color="white"></MdImportContacts>
-                        <h1 className="lexend-deca-400">Matt</h1>
+                        <img src="/logo_transparent.svg" className="h-auto w-12"></img>
+                        <h3 className="lexend-deca-400 text-xl">Matt Cabarrubias</h3>
                         </div>
                         <div className="flex gap-8">
                             <Link to="/" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200">
