@@ -1,9 +1,6 @@
 import { DiGithubBadge } from "react-icons/di";
 import { IoMdDownload } from "react-icons/io";
-import { MdArrowOutward } from "react-icons/md";
-
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { AnimatedContainer, BasicContainer } from "@/components/Containers";
 import { ProjectsRender } from "@/components/ProjectsRender";
 import SkillShowcase from "@/components/Skills";
