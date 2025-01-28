@@ -48,23 +48,14 @@ const Hero = () => {
         <AnimatedContainer delay={900}>
             <BasicContainer className="border-none">
                 <ProjectsRender renderCount={3}></ProjectsRender>
-                <div className="text-white ibm-plex-mono-medium flex flex-row justify-start">
-                    <Link
-                        to="/projects"
-                        className="flex flex-row items-center gap-2 text-xl text-gray-400 ibm-plex-mono-medium mb-3 relative group"
-                    >
-                        View More Projects
-                        <MdArrowOutward />
-                        <span className="absolute bottom-[-4px] left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-[240px]"></span>
-                    </Link>
-                </div>
             </BasicContainer>
         </AnimatedContainer>
         <AnimatedContainer delay={1000}>
             <BasicContainer className="border-none">
-            <h3 className="text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 md:text-left mb-4 w-full" id="projects">
+            <h3 className="text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 md:text-left mb-2 w-full" id="projects">
                 CONTACT ME
             </h3>
+            <h2 className="text-2xl text-gray-400 lexend-deca-300">I'd be happy to hear from you!</h2>
             </BasicContainer>
         </AnimatedContainer>
         </div>
