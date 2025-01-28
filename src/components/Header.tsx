@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { AnimatedContainer } from "./Containers";
-import { MdImportContacts } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Header = () => {
