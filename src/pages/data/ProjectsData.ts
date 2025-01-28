@@ -20,7 +20,7 @@ export interface Project {
     {
       title: "OSA Violation Tracker",
       imageUrl: "/osa.png",
-      tags: ["React", "Node.js", "MongoDB", "Render.com", "Google API", "Express", "React Router"],
+      tags: ["React", "Node.js", "MongoDB", "Render.com", "Google API", "Express", "React Router", "Specialized School Project"],
       link: "https://github.com/devliqht/violation-tracker",
       description: "A full-stack CRUD web application for tracking and handling student violations.",
       accordionContent: "Features include role-based authentication, data visualization of violations, and integration with Google APIs for streamlined workflows."
@@ -28,7 +28,7 @@ export interface Project {
     {
       title: "Lab Database System",
       imageUrl: "/res.png",
-      tags: ["React", "Node.js", "MongoDB", "Render.com", "Google API", "Express", "React Router"],
+      tags: ["React", "Node.js", "MongoDB", "Render.com", "Google API", "Express", "React Router", "Specialized School Project", "Capstone"],
       link: "https://github.com/devliqht/res-proiect",
       description: "A full-stack web application that streamlines the documentation of laboratory sessions using QR code scanning for quick experiment identification.",
       accordionContent: "Includes QR code generation and scanning, a database architecture for storing lab session details, and real-time updates."
@@ -45,11 +45,20 @@ export interface Project {
     {
       title: "Misinformation Website",
       imageUrl: "/misinfo.png",
-      tags: ["HTML", "CSS", "JavaScript", "jQuery", "AoS", "Google Forms"],
+      tags: ["HTML", "CSS", "JavaScript", "jQuery", "AoS", "Google Forms", "Animate.css", "FontAwesome","School Project"],
       link: "https://github.com/devliqht/tech01-website",
       description:
         "A campaign website submitted as the finals project for TECH01 class. It uses vanilla HTML and CSS, jQuery javascript to control the custom page progress bar, and the AoS (Animate-on-scroll) library for visual effects.",
       accordionContent: "A visually dynamic site with smooth scrolling animations, focused on raising awareness against misinformation."
+    },
+    {
+      title: "Old 2022 Portfolio",
+      imageUrl: "/hobby.png",
+      tags: ["HTML", "CSS", "JavaScript", "jQuery", "Typing Library", "Spotify iFrame", "Animate.css", "FontAwesome", "Google Fonts API"],
+      link: "https://github.com/devliqht/hobby-project",
+      description:
+        "An old portfolio website, featuring a pink and white minimalistic theme. It uses jQuery and a custom typing animation library, with UI design inspired from multiple platforms.",
+      accordionContent: "Portfolio website with UI inspired from multiple platforms to showcase immersion of the content. Does not include a responsive mobile view."
     },
     {
       title: "Genshin Damage Calculator",
@@ -59,6 +68,15 @@ export interface Project {
       description:
         "A simple genshin damage calculator that worked back in 2021. It used a formula provided by the Keqing discord server, now outdated. It uses Vanilla HTML, CSS and JavaScript to do the calculations. It uses Bootstrap for some of its component styles.",
       accordionContent: "Built as a practical tool for Genshin players, it features a clean Bootstrap interface for ease of use."
+    },
+    {
+      title: "Culminating Portfolio Activity",
+      imageUrl: "/oldportfolio.png",
+      tags: ["HTML", "CSS", "JavaScript", "Animate.css", "FontAwesome", "Google Fonts API", "School Project"],
+      link: "https://github.com/devliqht/website",
+      description:
+        "A culminating activity for a high school computer class featuring vanilla HTML, CSS and JavaScript and a fully responsive mobile view.",
+      accordionContent: "A responsive website featuring full-paged video background along with dynamic ranking list and smooth animations."
     },
   ];
   

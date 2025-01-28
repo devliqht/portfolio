@@ -20,7 +20,7 @@ const Hero = () => {
                 <div className="me-description text-white lexend-deca-300 text-left flex flex-col justify-between">
                     <h3 className="font-bold text-2xl mb-2">Hello, world.</h3>
                     <p className="mb-4 text-justify md:text-left">
-                        I am a BSCS student at the University of San Carlos, specializing in
+                        I am a 19 year old BSCS student at the University of San Carlos, specializing in
                         web development, UI/UX design, and video editing. As a quick learner
                         with a lifelong passion for coding, I bring creativity and technical
                         expertise to my projects. I thrive in collaborative settings, often

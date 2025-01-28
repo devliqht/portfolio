@@ -56,6 +56,7 @@ const ProjectsRender: React.FC<ProjectsRenderProps> = ({
   );
 };
 
+export const ProjectCount = projects.length;
 export {
     ProjectsRender
 }
