@@ -21,8 +21,12 @@ const ProjectsRender: React.FC<ProjectsRenderProps> = ({
   return (
       <AnimatedContainer delay={animateDelay}>
         <BasicContainer className="border-none" noPadding={true}>
-          <h3 className={`text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 ${showMore ? '' : 'mb-4'} md:text-left w-full`} id="projects">
-            {title}
+        <h3
+          className={`relative flex items-center text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 ${showMore ? '' : 'mb-8'} md:text-left w-full`}
+          id="projects"
+        >
+          {title}
+          <span className="flex-grow h-[1px] bg-gray-600 ml-4"></span>
           </h3>
             {showMore && (
               <div className="text-white ibm-plex-mono-medium flex flex-row justify-start mt-2 mb-4">
