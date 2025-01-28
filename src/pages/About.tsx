@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="h-full flex flex-col justify-center md:items-center p-4 md:p-6">  
             <AnimatedContainer delay={100}>
-                <BasicContainer paddingMobile={true}>
+                <BasicContainer className="border-none" paddingMobile={true}>
                 <div className="flex  md:flex-row justify-between flex-col-reverse">
                     <div className="flex flex-col">
                     <h3 className="text-2xl md:text-4xl text-[var(--white)] lexend-deca-700 mb-2 md:text-left w-full" id="about">
