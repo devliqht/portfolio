@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { AnimatedContainer } from "./Containers";
-import { Link } from "react-router-dom";
+import { NavLink, links } from "./NavLink";
+
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -60,63 +61,19 @@ const Header = () => {
                         <h3 className="lexend-deca-400 text-xl">Matt Cabarrubias</h3>
                         </div>
                         <div className="flex gap-8">
-                            <Link to="/" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200 relative group">
-                                Home
-                                <span className="absolute bottom-4 left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
-                            </Link>
-                            <Link to="/about" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200 relative group">
-                                About
-                                <span className="absolute bottom-4 left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
-                            </Link>
-                            <Link to="/tech" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200 relative group">
-                                Tech
-                                <span className="absolute bottom-4 left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
-                            </Link>
-                            <Link to="/projects" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200 relative group">
-                                Projects
-                                <span className="absolute bottom-4 left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
-                            </Link>
-                            <Link to="/contact" className="ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200 relative group">
-                                Contact
-                                <span className="absolute bottom-4 left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
-                            </Link>
+                            {links.map((link) => (
+                                <NavLink key={link.to} to={link.to} label={link.label} />
+                            ))}
                         </div>
                     </nav>
                 </div>
             </AnimatedContainer>
-
-            {/* Mobile Navigation */}
             {menuOpen && (
                 <AnimatedContainer from={{opacity: 0, transform: "translateY(-20px)"}} to={{opacity: 1, transform: "translateY(0)"}}>
                 <div className="transition ease-in-out duration-200 md:hidden flex flex-col space-y-2 py-4 rounded-xl">
-                    <Link
-                        to="/"
-                        className="text-white hover:text-gray-300 ibm-plex-mono-medium text-xl border-b-[1px] border-gray-600 py-4"
-                        onClick={() => setMenuOpen(false)}
-                    >
-                        Home
-                    </Link>
-                    <Link
-                        to="/about"
-                        className="text-white hover:text-gray-300 ibm-plex-mono-medium text-xl border-b-[1px] border-gray-600 py-4"
-                        onClick={() => setMenuOpen(false)}
-                    >
-                        About
-                    </Link>
-                    <Link
-                        to="/tech"
-                        className="text-white hover:text-gray-300 ibm-plex-mono-medium text-xl border-b-[1px] border-gray-600 py-4"
-                        onClick={() => setMenuOpen(false)}
-                    >
-                        Tech
-                    </Link>
-                    <Link
-                        to="/projects"
-                        className="text-white hover:text-gray-300 ibm-plex-mono-medium text-xl border-b-[1px] border-gray-600 py-4"
-                        onClick={() => setMenuOpen(false)}
-                    >
-                        Projects
-                    </Link>
+                    {links.map((link) => (
+                        <NavLink key={link.to} to={link.to} label={link.label} mobile={true}/>
+                    ))}
                 </div>
                 </AnimatedContainer>
             )}
