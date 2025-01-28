@@ -13,6 +13,7 @@ interface ProjectsContainerProps {
   title: string;
   imageUrl: string;
   children: ReactNode;
+  accordionContent?: string;
   tags?: string[];
   link?: string;
 }
@@ -39,6 +40,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
   title, 
   imageUrl, 
   children, 
+  accordionContent,
   tags = [],
   link,
 }) => {
@@ -68,7 +70,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           <AccordionItem value="item-1">
             <AccordionTrigger className="font-bold">More Info</AccordionTrigger>
             <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
+              {accordionContent}
             </AccordionContent>
           </AccordionItem>
         </Accordion>

@@ -44,6 +44,7 @@ const ProjectsRender: React.FC<ProjectsRenderProps> = ({
                 imageUrl={project.imageUrl}
                 tags={project.tags}
                 link={project.link}
+                accordionContent={project.accordionContent}
               >
                 {project.description}
               </ProjectsContainer>
