@@ -4,8 +4,10 @@ import { Button } from "@/components/ui/button";
 import { AnimatedContainer, BasicContainer } from "@/components/Containers";
 import { ProjectsRender } from "@/components/ProjectsRender";
 import SkillShowcase from "@/components/Skills";
+import { useIsMobile } from "@/components/helpers/isMobile";
 
 const Hero = () => {
+    const isMobile = useIsMobile();
     return (
         <div className="h-full flex flex-col justify-center md:items-center p-4 md:p-6">
         <AnimatedContainer delay={300} className="mt-4 md:mt-0 pl-2 md:pl-0">
@@ -40,7 +42,7 @@ const Hero = () => {
             </BasicContainer>
         </AnimatedContainer>
         <AnimatedContainer delay={700}>
-        <SkillShowcase></SkillShowcase>
+        <SkillShowcase centred={isMobile ? false : true}></SkillShowcase>
         </AnimatedContainer>
         <AnimatedContainer delay={900}>
             <BasicContainer className="border-none">

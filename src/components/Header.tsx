@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { AnimatedContainer } from "./Containers";
 import { NavLink, links } from "./NavLink";
-
+import { useIsMobile } from "./helpers/isMobile";
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
-    const [isMobile, setIsMobile] = useState(false);
+    const isMobile = useIsMobile();
 
     useEffect(() => {
       const handleScroll = () => {
@@ -15,15 +15,8 @@ const Header = () => {
       };
   
       window.addEventListener("scroll", handleScroll);
-
-      const mediaQuery = window.matchMedia("(max-width: 768px)");
-      const handleMediaChange = (e: any) => setIsMobile(e.matches);
-      setIsMobile(mediaQuery.matches); 
-      mediaQuery.addEventListener("change", handleMediaChange);
-
       return () => {
         window.removeEventListener("scroll", handleScroll);
-        mediaQuery.removeEventListener("change", handleMediaChange);
       };
     }, []);
 
