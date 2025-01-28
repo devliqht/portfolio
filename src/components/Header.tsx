@@ -31,14 +31,14 @@ const Header = () => {
         setMenuOpen(!menuOpen);
     };
     return (
-        <header className={`sticky top-0 z-50 p-4 text-white ${isMobile ? 'border-b-2 border-gray-800' : ''} bg-[var(--dblue)] ${isSticky ? "bg-[var(--dblue)]" : "bg-radial-dots" } bg-10px`}
+        <header className={`sticky top-0 z-50 p-4 text-white ${isMobile ? 'shadow-xl' : ''} bg-[var(--dblue)] ${isSticky ? "bg-[var(--dblue)]" : "bg-radial-dots" } bg-10px`}
         style={{
             maskImage:
-              isSticky || isMobile
+              isSticky || menuOpen
                 ? "none"
                 : "linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0))",
             WebkitMaskImage:
-              isSticky || isMobile
+              isSticky || menuOpen
                 ? "none"
                 : "linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0))",
           }}>
