@@ -42,7 +42,7 @@ const Hero = () => {
             </BasicContainer>
         </AnimatedContainer>
         <AnimatedContainer delay={700}>
-        <SkillShowcase centred={isMobile ? false : true}></SkillShowcase>
+            <SkillShowcase centred={isMobile ? false : true}></SkillShowcase>
         </AnimatedContainer>
         <AnimatedContainer delay={900}>
             <BasicContainer className="border-none">
