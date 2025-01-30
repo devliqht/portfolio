@@ -11,7 +11,7 @@ const Hero = () => {
     const isMobile = useIsMobile();
     return (
         <div className="h-full flex flex-col justify-center md:items-center p-4 md:p-6">
-        <AnimatedContainer delay={300} className="mt-4 md:mt-0 pl-2 md:pl-0">
+        <AnimatedContainer delay={300} className="mt-0 pl-2 md:pl-0">
             <div className="flex flex-col items-start mt-4 md:justify-center md:items-center" id="home">
                 <h1 className="text-5xl text-[var(--white)] lexend-deca-700">Hi. Hello. Welcome.</h1>
                 <h2 className="text-2xl text-gray-400 lexend-deca-300 mt-3">Matt Cabarrubias</h2>
