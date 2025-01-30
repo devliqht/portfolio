@@ -55,16 +55,16 @@ const Header = () => {
                                 </button>
                             </SheetTrigger>
                             <SheetContent side="left" className="w-64 bg-[var(--dblue)] text-white">
-                                <div className="flex flex-col space-y-6 p-4">
+                                <div className="flex flex-col space-y-6 py-4 px-2">
                                     <div className="flex justify-between items-center">
-                                        <h3 className="lexend-deca-400 text-xl">Menu</h3>
+                                        <h3 className="lexend-deca-400 text-2xl">Menu</h3>
                                         <button className="text-white text-2xl" onClick={() => setIsOpen(false)}>
                                             <X />
                                         </button>
                                     </div>
                                     <nav className="flex flex-col space-y-4">
                                         {links.map((link) => (
-                                            <NavLink key={link.to} to={link.to} label={link.label} onClick={() => setIsOpen(false)} />
+                                            <NavLink key={link.to} mobile={true} to={link.to} label={link.label} onClick={() => setIsOpen(false)} />
                                         ))}
                                     </nav>
                                 </div>
