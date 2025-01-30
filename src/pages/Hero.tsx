@@ -1,10 +1,11 @@
 import { DiGithubBadge } from "react-icons/di";
-import { IoMdDownload } from "react-icons/io";
 import { Button } from "@/components/ui/button";
 import { AnimatedContainer, BasicContainer } from "@/components/Containers";
 import { ProjectsRender } from "@/components/ProjectsRender";
 import SkillShowcase from "@/components/Skills";
 import { useIsMobile } from "@/components/helpers/isMobile";
+import { IoMdContact } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
     const isMobile = useIsMobile();
@@ -36,7 +37,9 @@ const Hero = () => {
                             GitHub Profile
                         </Button>
                     </a>
-                    <Button className="w-fit" variant="outline"><IoMdDownload></IoMdDownload>Download CV</Button>
+                    <Link to="/contact">
+                        <Button className="w-fit" variant="outline"><IoMdContact></IoMdContact>Contact Me</Button>        
+                    </Link>
                     </div>
                 </div>
             </BasicContainer>
