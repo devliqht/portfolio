@@ -15,7 +15,11 @@ const Hero = () => {
             <div className="flex flex-col items-start mt-4 md:justify-center md:items-center" id="home">
                 <h1 className="text-5xl text-[var(--white)] lexend-deca-700">Hi. Hello. Welcome.</h1>
                 <h2 className="text-2xl text-gray-400 lexend-deca-300 mt-3">Matt Cabarrubias</h2>
-                <img src="/me.png" alt="Me" className="w-64 h-auto rounded-full my-6" />
+                <div
+                    className="relative w-64 h-64 rounded-full p-4 m-4 overflow-hidden transition ease-in-out duration-200 bg-radial-dots hover:bg-radial-dots-light bg-10px"
+                    >
+                    <img src="/me.png" alt="Me" className="w-full h-full object-cover rounded-full" />
+                    </div>
             </div>
         </AnimatedContainer>
         <AnimatedContainer delay={500}>
