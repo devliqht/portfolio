@@ -54,7 +54,7 @@ const Header = () => {
                                     <Menu />
                                 </button>
                             </SheetTrigger>
-                            <SheetContent side="left" className="w-64 bg-[var(--dblue)] text-white">
+                            <SheetContent side="left" className="w-56 bg-[var(--dblue)] text-white">
                                 <div className="flex flex-col space-y-6 py-4 px-2">
                                     <div className="flex justify-between items-center">
                                         <h3 className="lexend-deca-400 text-2xl">Menu</h3>

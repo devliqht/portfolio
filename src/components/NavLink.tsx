@@ -20,7 +20,7 @@ export const NavLink: React.FC<NavLinkProps> = ({ to, label, onClick, mobile = f
         <Link
           to={to}
           className=
-          {`${mobile ? 'text-gray-500 hover:text-gray-300 ibm-plex-mono-medium text-xl py-4 transition ease-in-out duration-200 relative group' 
+          {`${mobile ? 'text-gray-500 hover:text-gray-300 lexend-deca-400 text-xl py-4 transition ease-in-out duration-200 relative group' 
             : 'ibm-plex-mono-regular text-gray-500 hover:text-gray-300 text-md py-4 border-transparent transition ease-in-out duration-200 relative group'}`}
           onClick={onClick}
         >
