@@ -4,6 +4,7 @@ import { AnimatedContainer, BasicContainer } from "@/components/Containers";
 import { ProjectsRender } from "@/components/ProjectsRender";
 import SkillShowcase from "@/components/Skills";
 import { useIsMobile } from "@/components/helpers/isMobile";
+import Typewriter from "@/components/Typewriter";
 import { IoMdContact } from "react-icons/io";
 import { Link } from "react-router-dom";
 
@@ -24,8 +25,8 @@ const Hero = () => {
         </AnimatedContainer>
         <AnimatedContainer delay={500}>
             <BasicContainer className="md:w-[70%]" noPadding={false} paddingMobile={true}>
-                <div className="me-description text-white lexend-deca-300 text-left flex flex-col justify-between">
-                    <h3 className="font-bold text-2xl mb-2">Hello, world.</h3>
+                <div className="text-white lexend-deca-300 text-left flex flex-col justify-between">
+                    <h3 className="font-bold text-2xl mb-2">&gt; <Typewriter text="Hello, world." delay={150} /></h3>
                     <p className="mb-4 text-justify md:text-left">
                         I am a 19 year old BSCS student at the University of San Carlos, specializing in
                         web development, UI/UX design, and video editing. As a quick learner
