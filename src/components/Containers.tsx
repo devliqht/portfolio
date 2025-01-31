@@ -52,14 +52,20 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
       {!isImageLoaded && (
           <div className="h-full w-full bg-gray-300 animate-pulse rounded-lg"></div>
         )}
-        <img
-          src={imageUrl}
-          alt={title}
-          className={`h-full w-full object-cover transform transition-transform duration-500 hover:scale-105 ${
-            isImageLoaded ? "opacity-100" : "opacity-0"
-          }`}
-          onLoad={() => setIsImageLoaded(true)}
-        />
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={imageUrl}
+            alt={title}
+            className={`h-full w-full object-cover transform transition-transform duration-500 hover:scale-105 ${
+              isImageLoaded ? "opacity-100" : "opacity-0"
+            }`}
+            onLoad={() => setIsImageLoaded(true)}
+          />
+        </a>
     </div>
       <div className="flex flex-col items-start">
         <a
