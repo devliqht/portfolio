@@ -1,8 +1,6 @@
 import React, { ReactNode, useState } from 'react';
 import { animated, useSpring } from '@react-spring/web'
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-
-
 import {
   Accordion,
   AccordionContent,

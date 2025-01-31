@@ -43,13 +43,10 @@ const Header = () => {
         >
             <AnimatedContainer delay={100} from={{ opacity: 0, transform: "translateY(-20px)" }} to={{ opacity: 1, transform: "translateY(0)" }}>
                 <div className="inner-nav container md:mx-auto flex justify-between flex-row-reverse md:flex-row items-center">
-                    <div className="flex flex-row gap-2 items-center">
-                        
+                    <div className="flex flex-row gap-2 items-center">   
                     <img src="/logo_transparent.svg" className="h-auto w-12" />
                         <h3 className="hidden md:block lexend-deca-400 text-xl tracking-tight">Matt Cabarrubias</h3>
                     </div>
-
-                    {/* 📌 Render Desktop Navbar */}
                     {!isMobile && (
                         <nav className="hidden md:flex md:gap-8">
                             {links.map((link) => (
@@ -57,8 +54,6 @@ const Header = () => {
                             ))}
                         </nav>
                     )}
-
-                    {/* 📌 Render Mobile Sidebar using ShadCN */}
                     {isMobile && (
                         <Sheet open={isOpen} onOpenChange={setIsOpen}>
                             <SheetTrigger asChild>
