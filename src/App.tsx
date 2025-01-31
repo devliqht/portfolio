@@ -1,34 +1,20 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Hero from "@/pages/Hero.tsx";
-import Projects from "@/pages/Projects.tsx";
-import Tech from "@/pages/Tech";
-import About from "@/pages/About";
-import Contact from "@/pages/Contact";
+import { BrowserRouter as Router, useRoutes } from "react-router-dom";
+import { Suspense } from "react";
+import routes from "./routes";
+import SuspenseLoader from "@/components/SuspenseLoader";
 
-import Header from "@/components/Header.tsx";
-import Footer from "@/components/Footer";
-import ScrollToTop from "@/components/ScrollToTop.tsx";
-import './App.css';
+const AppRoutes = () => {
+  return useRoutes(routes);
+};
 
 function App() {
   return (
-    <>
     <Router>
-      <div>
-        <Header></Header>
-        <ScrollToTop></ScrollToTop>
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/tech" element={<Tech />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-        <Footer></Footer>
-      </div>
+      <Suspense fallback={<SuspenseLoader />}>
+        <AppRoutes />
+      </Suspense>
     </Router>
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
