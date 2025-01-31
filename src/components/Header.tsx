@@ -44,8 +44,9 @@ const Header = () => {
             <AnimatedContainer delay={100} from={{ opacity: 0, transform: "translateY(-20px)" }} to={{ opacity: 1, transform: "translateY(0)" }}>
                 <div className="inner-nav container md:mx-auto flex justify-between flex-row-reverse md:flex-row items-center">
                     <div className="flex flex-row gap-2 items-center">
-                        <img src="/logo_transparent.svg" className="h-auto w-12" />
-                        <h3 className="hidden md:block lexend-deca-400 text-xl">Matt Cabarrubias</h3>
+                        
+                    <img src="/logo_transparent.svg" className="h-auto w-12" />
+                        <h3 className="hidden md:block lexend-deca-400 text-xl tracking-tight">Matt Cabarrubias</h3>
                     </div>
 
                     {/* 📌 Render Desktop Navbar */}
@@ -78,6 +79,11 @@ const Header = () => {
                                             <NavLink key={link.to} mobile={true} to={link.to} label={link.label} onClick={() => setIsOpen(false)} />
                                         ))}
                                     </nav>
+                                </div>
+                                <div className="absolute bottom-0 left-0 w-full pb-8 pt-6 px-2 border-t border-gray-600 text-center text-sm bg-[var(--dblue)] flex flex-col items-center">
+                                <img src="/logo_transparent.svg" className="h-auto w-12 mb-2" />
+                                    <p className="lexend-deca-700">Matt Cabarrubias</p>
+                                    <p className="text-gray-400">© 2025 All rights reserved.</p>
                                 </div>
                             </SheetContent>
                         </Sheet>

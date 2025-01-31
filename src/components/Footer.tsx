@@ -3,7 +3,7 @@ import { AnimatedContainer } from "./Containers";
 import { FaReact, FaJs } from "react-icons/fa";
 import { RiTailwindCssFill, RiVercelFill } from "react-icons/ri";
 import { SiTypescript, SiBun, SiVite, SiShadcnui } from "react-icons/si";
-import { MdArrowOutward } from "react-icons/md";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const Footer = () => {
     const FooterIconSize: number = 35;
@@ -19,7 +19,7 @@ const Footer = () => {
     <div className="container flex flex-col md:flex-row gap-8 justify-between items-start pt-8 md:p-6">
         <div className="md:text-left">
           <h4 className="text-2xl md:text-3xl font-bold lexend-deca-700">Matt Cabarrubias</h4>
-          <p className="text-md opacity-80">© 2025 All rights reserved. Made with love ♥︎</p>
+          <p className="text-md opacity-80 lexend-deca-300">© 2025 All rights reserved. Made with love ♥︎</p>
           <div className="flex flex-row my-4 gap-2">
             <FaReact size={FooterIconSize}></FaReact>
             <FaJs size={FooterIconSize}></FaJs>
@@ -37,7 +37,7 @@ const Footer = () => {
                 className="flex flex-row items-center gap-2 text-md text-gray-400 ibm-plex-mono-medium mb-3 relative group"
             >
                 View Repository on GitHub
-                <MdArrowOutward />
+                <FaArrowUpRightFromSquare size={15} />
                 <span className="absolute bottom-[-4px] left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-[240px]"></span>
             </a>
         </div>

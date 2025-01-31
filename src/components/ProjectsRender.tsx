@@ -1,7 +1,7 @@
 import { BasicContainer, ProjectsContainer } from "@/components/Containers";
 import { Project, projects } from '@/pages/data/ProjectsData';
 import { Link } from "react-router-dom";
-import { MdArrowOutward } from "react-icons/md";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 interface ProjectsRenderProps {
     renderCount: number;
@@ -19,7 +19,7 @@ const ProjectsRender: React.FC<ProjectsRenderProps> = ({
   return (
         <BasicContainer className="border-none" noPadding={true}>
         <h3
-          className={`relative flex items-center text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 ${showMore ? '' : 'mb-8'} md:text-left w-full`}
+          className={`relative flex items-center text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 tracking-tighter ${showMore ? '' : 'mb-8'} md:text-left w-full`}
           id="projects"
         >
           {title}
@@ -32,7 +32,7 @@ const ProjectsRender: React.FC<ProjectsRenderProps> = ({
                     className="flex flex-row items-center gap-2 text-xl text-gray-400 ibm-plex-mono-medium mb-3 relative group"
                 >
                     View More Projects
-                    <MdArrowOutward />
+                    <FaArrowUpRightFromSquare size={15} />
                     <span className="absolute bottom-[-4px] left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-[240px]"></span>
                 </Link>
             </div>

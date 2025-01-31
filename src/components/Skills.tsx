@@ -59,7 +59,7 @@ const SkillShowcase: React.FC<SkillShowcaseProps> = ({centred = true}) => {
           { icon: <DiGithubBadge size={IconSize}/>, name: "GitHub" },
           { icon: <DiTerminal size={IconSize}/>, name: "Terminal" },
           { icon: <DiMongodb size={IconSize}/>, name: "MongoDB" },
-          { icon: <DiGoogleCloudPlatform size={IconSize}/>, name: "Google Cloud" },
+          { icon: <DiGoogleCloudPlatform size={IconSize}/>, name: "GCloud" },
           { icon: <SiAdobeaftereffects size={IconSize}/>, name: "After Effects" },
           { icon: <SiAdobelightroomclassic size={IconSize}/>, name: "Lightroom" },
           { icon: <SiCanva size={IconSize}/>, name: "Canva" },
@@ -76,11 +76,12 @@ const SkillShowcase: React.FC<SkillShowcaseProps> = ({centred = true}) => {
             </h3>
             <div className={`flex flex-row md:items-center ${centred ? 'justify-center' : 'justify-start'} gap-4 flex-wrap mb-8`}>
               {category.items.map((item, i) => (
-                <div key={i} className="flex flex-col items-center gap-2 transition-transform hover:scale-110">
+                <div key={i} className="flex flex-col items-center gap-2 transition-transform hover:scale-110 w-16 h-20 md:h-16">
                   <div className="text-6xl text-white" data-tooltip-id={`tooltip-${item.name}`}>
                     {item.icon}
                   </div>
                   <Tooltip id={`tooltip-${item.name}`} content={item.name} />
+                  <p className="text-sm text-gray-500 lexend-deca-300">{item.name}</p>
                 </div>
               ))}
             </div>

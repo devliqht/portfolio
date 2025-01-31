@@ -1,6 +1,7 @@
 import React, { ReactNode, useState } from 'react';
 import { animated, useSpring } from '@react-spring/web'
-import { MdArrowOutward } from "react-icons/md";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+
 
 import {
   Accordion,
@@ -72,13 +73,13 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex flex-row items-center gap-2 text-xl text-gray-400 ibm-plex-mono-medium mb-3 relative group"
+          className="flex flex-row items-center gap-2 text-xl text-gray-400 ibm-plex-mono-medium mb-3 relative group tracking-tight"
         >
           {title}
-          <MdArrowOutward />
+          <FaArrowUpRightFromSquare size={15}/>
           <span className="absolute bottom-[-4px] left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <div className="text-gray-300 text-justify h-full text-sm italic w-full">
+        <div className="text-gray-300 text-justify h-full text-sm italic w-full lexend-deca-400 tracking-tight">
           {children}
           <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
@@ -96,7 +97,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded-lg"
+              className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded-lg ibm-plex-mono-regular"
             >
               {tag}
             </span>
