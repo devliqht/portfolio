@@ -11,10 +11,21 @@ const Header = () => {
     const isMobile = useIsMobile();
 
     useEffect(() => {
-        const handleScroll = () => setIsSticky(window.scrollY > 80);
+        let ticking = false;
+      
+        const handleScroll = () => {
+          if (!ticking) {
+            requestAnimationFrame(() => {
+              setIsSticky(window.scrollY > 80);
+              ticking = false;
+            });
+            ticking = true;
+          }
+        };
+      
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
+      }, []);
 
     return (
         <header
