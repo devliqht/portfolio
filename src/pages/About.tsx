@@ -1,19 +1,56 @@
 import { AnimatedContainer, BasicContainer } from "@/components/Containers"
+import { MdOutlineWeb } from "react-icons/md";
+import { FaPhotoVideo } from "react-icons/fa";
+import { CgIfDesign } from "react-icons/cg";
+import { MdOutlineGraphicEq } from "react-icons/md";
+import { MdPhoto } from "react-icons/md";
+import { SiAdobelightroomclassic } from "react-icons/si";
+import { PiFileCpp } from "react-icons/pi";
 
 interface EducationContainerProps {
     course?: string;
     school?: string;
     year?: string;
+    img?: string;
 }
 
-const EducationContainer: React.FC<EducationContainerProps> = ({course, school, year}) => {
+const iconSize: number = 30;
+const ComputerSkills = [
+    { icon: <MdOutlineWeb size={iconSize}/>, name: "Web Development" },
+    { icon: <FaPhotoVideo size={iconSize}/>, name: "Video Editing" },
+    { icon: <CgIfDesign size={iconSize}/>, name: "UI/UX Design" },
+    { icon: <MdOutlineGraphicEq size={iconSize}/>, name: "Graphic Design" },
+    { icon: <MdPhoto size={iconSize}/>, name: "Photography" },
+    { icon: <SiAdobelightroomclassic size={iconSize}/>, name: "Color Grading" },
+    { icon: <PiFileCpp size={iconSize}/>, name: "Systems Programming (C, C++)" },
+]
+
+const ComputerSkillsContainer: React.FC = () => {
     return (
-        <div className="flex flex-col py-4 border-[var(--dblue-ll)] border-b-2">
-            <h1 className="text-white text-xl lexend-deca-400">{course}</h1>
-            <p className="text-white text-justify md:text-left ibm-plex-mono-regular">
-                {school}
-            </p>
-            <h4 className="text-white text-md">{year}</h4>
+        <>   
+            {ComputerSkills.map((item, index) => (
+                <div key={index} className="flex flex-row gap-6 items-center p-4 my-4 bg-[var(--dblue-l)] border-[1px] border-[var(--dblue-ll)] rounded-lg">
+                    <div className="flex items-center gap-4 text-white">
+                        {item.icon}
+                        <span className="text-lg">{item.name}</span>
+                    </div>
+                </div>
+            ))}
+        </>
+    );
+};
+
+const EducationContainer: React.FC<EducationContainerProps> = ({course, school, year, img}) => {
+    return (
+        <div className="flex flex-row items-center gap-4">
+            <img src={img} className="w-16 h-auto" />
+                <div className="flex flex-col py-4 border-[var(--dblue-ll)] border-b-2 w-full">
+                <h1 className="text-white text-xl lexend-deca-400">{course}</h1>
+                <p className="text-white text-justify md:text-left ibm-plex-mono-regular">
+                    {school}
+                </p>
+                <h4 className="text-white text-md">{year}</h4>
+            </div>
         </div>
     );
 }
@@ -30,31 +67,16 @@ const About = () => {
                     <div className="flex flex-col md:flex-row gap-8">
                         <div className="flex flex-col"> 
                             <h2 className="text-2xl text-gray-400 lexend-deca-300">Education</h2>
-                            <EducationContainer course="Bachelor of Science in Computer Science" school="University of San Carlos" year="2024-2027"></EducationContainer>
-                            <EducationContainer course="Senior High School - STEM" school="University of San Carlos" year="2022-2024"></EducationContainer>
-                            <EducationContainer course="High School" school="Don Bosco Technical College" year="2018-2022"></EducationContainer>
+                            <EducationContainer course="Bachelor of Science in Computer Science" school="University of San Carlos" year="2024-2027" img="/usc.png"></EducationContainer>
+                            <EducationContainer course="Senior High School - STEM" school="University of San Carlos" year="2022-2024" img="/usc.png"></EducationContainer>
+                            <EducationContainer course="High School" school="Don Bosco Technical College" year="2018-2022" img="/donbosco.png"></EducationContainer>
                         </div>
                         <div className="flex flex-col">
-                            <h2 className="text-2xl text-gray-400 lexend-deca-300">Skills</h2>
-                            <div className="flex flex-col py-4 border-b-2 border-[var(--dblue-ll)]">
-                                <h1 className="text-white text-xl lexend-deca-400 ">Leadership Skills</h1>
-                                <p className="text-gray-400 text-justify md:text-left ibm-plex-mono-regular">
-                                    Research Leader (S.Y 2022-2023, 2023-2024) <br /> 
-                                    Project Lead (S.Y 2023-2024) <br /> 
-                                    Class Representative (S.Y 2024-2025)
-                                </p>
-                            </div>
-                            <div className="flex flex-col py-4 border-b-2 border-[var(--dblue-ll)]">
-                                <h1 className="text-white text-xl lexend-deca-400 ">Computer Skills</h1>
-                                <p className="text-gray-400 text-justify md:text-left ibm-plex-mono-regular">
-                                    Web Development <br /> 
-                                    Video Editing <br /> 
-                                    UI/UX Design <br /> 
-                                    Graphic Design <br /> 
-                                    Photography <br /> 
-                                    Color Grading <br /> 
-                                    Systems Programming (C, C++) <br /> 
-                                </p>
+                            <h2 className="text-2xl text-gray-400 lexend-deca-300">Computer Skills</h2>
+                            <div className="flex flex-col pb-4">
+                                <div className="text-gray-400 text-justify md:text-left ibm-plex-mono-regular">
+                                    <ComputerSkillsContainer />
+                                </div>
                             </div>
                         </div>
                     </div>
