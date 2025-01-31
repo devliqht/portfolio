@@ -32,7 +32,7 @@ const ComputerSkillsContainer: React.FC = () => {
                 <div key={index} className="flex flex-row gap-6 items-center p-4 my-4 bg-[var(--dblue-l)] border-[1px] border-[var(--dblue-ll)] rounded-lg">
                     <div className="flex items-center gap-4 text-white">
                         {item.icon}
-                        <span className="text-lg">{item.name}</span>
+                        <span className="text-md md:text-lg">{item.name}</span>
                     </div>
                 </div>
             ))}
@@ -45,11 +45,11 @@ const EducationContainer: React.FC<EducationContainerProps> = ({course, school, 
         <div className="flex flex-row items-center gap-4">
             <img src={img} className="w-16 h-auto" />
                 <div className="flex flex-col py-4 border-[var(--dblue-ll)] border-b-2 w-full">
-                <h1 className="text-white text-xl lexend-deca-400">{course}</h1>
-                <p className="text-white text-justify md:text-left ibm-plex-mono-regular">
+                <h1 className="text-white text-lg md:text-xl lexend-deca-400">{course}</h1>
+                <p className="text-gray-300 text-sm md:text-md text-justify md:text-left ibm-plex-mono-regular ">
                     {school}
                 </p>
-                <h4 className="text-white text-md">{year}</h4>
+                <h4 className="text-white text-sm mt-1">{year}</h4>
             </div>
         </div>
     );
@@ -58,7 +58,7 @@ const About = () => {
     return (
         <div className="h-full flex flex-col justify-center md:items-center p-4 md:p-6">  
             <AnimatedContainer delay={100}>
-                <BasicContainer className="border-none" paddingMobile={false}>
+                <BasicContainer className="border-none mt-0" paddingMobile={false}>
                 <div className="flex md:flex-row justify-between flex-col-reverse">
                     <div className="flex flex-col">
                     <h3 className="text-2xl md:text-4xl text-[var(--white)] lexend-deca-700 mb-2 md:text-left w-full" id="about">
@@ -66,7 +66,7 @@ const About = () => {
                     </h3>  
                     <div className="flex flex-col md:flex-row gap-8">
                         <div className="flex flex-col"> 
-                            <h2 className="text-2xl text-gray-400 lexend-deca-300">Education</h2>
+                            <h2 className="text-xl md:text-2xl text-gray-400 lexend-deca-300">Education</h2>
                             <EducationContainer course="Bachelor of Science in Computer Science" school="University of San Carlos" year="2024-2027" img="/usc.png"></EducationContainer>
                             <EducationContainer course="Senior High School - STEM" school="University of San Carlos" year="2022-2024" img="/usc.png"></EducationContainer>
                             <EducationContainer course="High School" school="Don Bosco Technical College" year="2018-2022" img="/donbosco.png"></EducationContainer>
