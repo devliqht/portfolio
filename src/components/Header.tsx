@@ -57,15 +57,20 @@ const Header = () => {
                     {isMobile && (
                         <Sheet open={isOpen} onOpenChange={setIsOpen}>
                             <SheetTrigger asChild>
-                                <button className="text-white text-3xl">
-                                    <Menu />
-                                </button>
+                            <button
+                                className={`text-white text-3xl transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
+                            >
+                                <Menu />
+                            </button>
                             </SheetTrigger>
                             <SheetContent side="left" className="w-56 bg-[var(--dblue)] text-white">
                                 <div className="flex flex-col space-y-6 py-4 px-2">
                                     <div className="flex justify-between items-center">
                                         <h3 className="lexend-deca-400 text-2xl">Menu</h3>
-                                        <button className="text-white text-2xl" onClick={() => setIsOpen(false)}>
+                                        <button
+                                            className={`text-white text-2xl transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`}
+                                            onClick={() => setIsOpen(false)}
+                                        >
                                             <X />
                                         </button>
                                     </div>
