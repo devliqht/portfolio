@@ -77,7 +77,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           <FaArrowUpRightFromSquare size={15}/>
           <span className="absolute bottom-[-4px] left-0 h-[2px] w-0 bg-gray-400 transition-all duration-300 group-hover:w-full"></span>
         </a>
-        <div className="text-gray-300 text-justify h-full text-sm italic w-full lexend-deca-400 tracking-tight">
+        <div className="text-gray-300 h-full text-sm italic w-full lexend-deca-400 tracking-tight">
           {children}
           <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
@@ -95,7 +95,7 @@ const ProjectsContainer: React.FC<ProjectsContainerProps> = ({
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="px-2 py-1 text-xs bg-gray-700 text-gray-300 rounded-lg ibm-plex-mono-regular"
+              className="px-2 py-1 text-xs bg-gray-700 text-gray-300 tracking-tight rounded-lg ibm-plex-mono-light"
             >
               {tag}
             </span>

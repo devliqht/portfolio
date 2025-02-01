@@ -27,7 +27,7 @@ const Hero = () => {
             <BasicContainer className="md:w-[70%]" noPadding={false} paddingMobile={true}>
                 <div className="text-white lexend-deca-300 text-left flex flex-col justify-between">
                     <h3 className="font-bold text-2xl mb-2 tracking-tighter">&gt; <Typewriter text="Hello, world." delay={150} /></h3>
-                    <p className="mb-4 text-justify text-sm md:text-lg md:tracking-tight">
+                    <p className="mb-4 text-justify text-md md:text-[1.105rem] md:leading-6 md:tracking-tight">
                         I am a 19 year old BSCS student at the University of San Carlos, specializing in
                         web development, UI/UX design, and video editing. As a quick learner
                         with a lifelong passion for coding, I bring creativity and technical

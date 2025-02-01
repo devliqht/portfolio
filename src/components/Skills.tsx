@@ -81,7 +81,7 @@ const SkillShowcase: React.FC<SkillShowcaseProps> = ({centred = true}) => {
                     {item.icon}
                   </div>
                   <Tooltip id={`tooltip-${item.name}`} content={item.name} />
-                  <p className="text-sm text-gray-500 lexend-deca-300">{item.name}</p>
+                  <p className="text-sm text-gray-600 lexend-deca-300">{item.name}</p>
                 </div>
               ))}
             </div>
