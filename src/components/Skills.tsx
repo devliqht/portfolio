@@ -70,7 +70,7 @@ const SkillShowcase: React.FC<SkillShowcaseProps> = ({centred = true}) => {
     return (
       <BasicContainer outline={false} paddingMobile={false}>
         {categories.map((category, index) => (
-          <div key={index} className={`flex flex-col ${centred ? 'md:items-center': 'items-left'}`}>
+          <div key={index} className={`flex flex-col ${centred ? 'md:items-center': 'items-left'} ${isMobile ? '' : 'mb-6'}`}>
             <h3 className="text-2xl md:text-3xl tracking-tight text-gray-300 lexend-deca-400 border-b-[1px] md:w-fit border-gray-700 md:text-center pb-3 mb-4">
               {category.title}
             </h3>
