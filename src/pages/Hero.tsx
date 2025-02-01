@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="h-full flex flex-col justify-center md:items-center p-4 md:p-6">
         <AnimatedContainer delay={300} className="mt-0 md:pl-0">
             <div className="flex flex-col items-start mt-4 md:justify-center md:items-center" id="home">
-                <h1 className="text-4xl md:text-5xl bg-gradient-to-b from-gray-100 via-gray-300 to-gray-700 bg-clip-text text-transparent lexend-deca-700 tracking-tighter">Hi. Hello. Welcome.</h1>
+                <h1 className="text-4xl md:text-5xl bg-gradient-to-b from-gray-100 via-gray-300 to-gray-500 bg-clip-text text-transparent lexend-deca-700 tracking-tighter">Hi. Hello. Welcome.</h1>
                 <h2 className="text-2xl text-gray-400 lexend-deca-300 mt-3 text-center">Matt Cabarrubias</h2>
                 <div
                     className="relative w-64 h-64 rounded-full p-4 m-4 overflow-hidden transition ease-in-out duration-200 bg-radial-dots hover:bg-radial-dots-light bg-10px"
