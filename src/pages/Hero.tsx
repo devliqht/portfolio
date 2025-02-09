@@ -13,18 +13,20 @@ const Hero = () => {
     return (
         <div className="h-full flex flex-col justify-center md:items-center p-4 md:p-6">
         <AnimatedContainer delay={300} className="mt-0 md:pl-0">
-            <div className="flex flex-col items-start mt-4 md:justify-center md:items-center" id="home">
-                <h1 className="text-4xl md:text-5xl bg-gradient-to-b from-gray-100 via-gray-300 to-gray-500 bg-clip-text text-transparent lexend-deca-700 tracking-tighter">Hi. Hello. Welcome.</h1>
+            <div className="flex flex-col mt-4 md:justify-center md:items-center items-start" id="home">
+                <h1 className="text-4xl md:text-5xl text-center bg-gradient-to-b from-gray-100 via-gray-300 to-gray-500 bg-clip-text text-transparent lexend-deca-700 tracking-tighter">Hi. Hello. Welcome.</h1>
                 <h2 className="text-2xl text-slate-400 lexend-deca-300 mt-3 text-center">Matt Cabarrubias</h2>
-                <div
-                    className="relative w-64 h-64 rounded-full p-4 m-4 overflow-hidden transition ease-in-out duration-200 bg-radial-dots hover:bg-radial-dots-light bg-10px"
-                    >
-                    <img src="/me.png" alt="Me" className="w-full h-full object-cover rounded-full" />
-                    </div>
+                <div className="relative w-64 h-64 rounded-full p-4 m-4 overflow-hidden bg-radial-dots hover:bg-radial-dots-light bg-10px">
+                {/* Animated Border */}
+                <div className="absolute inset-0 animate-spin-slow rounded-full border-[4px] border-transparent before:absolute before:inset-0 before:rounded-full before:border-[6px] before:border-transparent before:border-t-gray-300 before:border-b-gray-500 before:border-l-gray-400 before:border-r-gray-600 before:animate-particle-trail"></div>
+
+                {/* Profile Image */}
+                <img src="/me.png" alt="Me" className="w-full h-full object-cover rounded-full" />
+                </div>
             </div>
         </AnimatedContainer>
         <AnimatedContainer delay={500}>
-            <BasicContainer className="md:w-[70%] md:border-4" noPadding={false} paddingMobile={true}>
+            <BasicContainer className="md:w-[70%] md:border-2" noPadding={false} paddingMobile={false}>
                 <div className="text-white lexend-deca-300 text-left flex flex-col justify-between">
                     <h3 className="font-bold text-2xl mb-2 tracking-tighter ibm-plex-mono-semibold bg-gradient-to-b from-gray-100 via-gray-300 to-gray-400 bg-clip-text text-transparent border-b-[1px] pb-2 border-gray-700">&gt; <Typewriter text="Hello, world." delay={150} /></h3>
                     <p className="mb-4 text-justify text-md text-slate-300 md:text-[1.105rem] md:leading-6 md:tracking-tight lexend-deca-300">

@@ -44,7 +44,7 @@ const Header = () => {
             <AnimatedContainer delay={100} from={{ opacity: 0, transform: "translateY(-20px)" }} to={{ opacity: 1, transform: "translateY(0)" }}>
                 <div className="inner-nav container md:mx-auto flex justify-between flex-row-reverse md:flex-row items-center">
                     <div className="flex flex-row gap-2 items-center">   
-                    <img src="/logo_transparent.svg" className="h-auto w-12" />
+                    <img src="/logo_transparent.svg" className="h-auto w-12 translate-x-2" />
                         <h3 className="hidden md:block lexend-deca-400 text-xl tracking-tight bg-gradient-to-b from-gray-100 via-gray-300 to-gray-700 bg-clip-text text-transparent">Matt Cabarrubias</h3>
                     </div>
                     {!isMobile && (

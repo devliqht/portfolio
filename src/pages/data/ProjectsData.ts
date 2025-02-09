@@ -78,6 +78,15 @@ export interface Project {
         "A culminating activity for a high school computer class featuring vanilla HTML, CSS and JavaScript and a fully responsive mobile view.",
       accordionContent: "A responsive website featuring full-paged video background along with dynamic ranking list and smooth animations."
     },
+    {
+      title: "Adobe EULA Analysis",
+      imageUrl: "/adobe.png",
+      tags: ["React", "TypeScript", "Bun", "Vite", "TailwindCSS", "ShadcnUI", "React Router", "Vercel"],
+      link: "https://tfl-adobe.vercel.app",
+      description:
+        "",
+      accordionContent: ""
+    },
   ];
   
   const UIDesigns: Project[] = [

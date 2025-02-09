@@ -5,14 +5,14 @@ import ScrollToTop from "@/components/ScrollToTop.tsx";
 
 const Layout = () => {
   return (
-    <>
+    <div className="p-1">
       <Header />
       <ScrollToTop />
       <main>
         <Outlet />
       </main>
       <Footer />
-    </>
+    </div>
   );
 };
 

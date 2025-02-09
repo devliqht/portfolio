@@ -107,6 +107,7 @@ const About = () => {
                             <h3 className="text-3xl md:text-4xl text-[var(--white)] lexend-deca-700 mb-2 md:text-left w-full tracking-tighter" id="about">
                                 SKILLS
                             </h3>
+                            <h2 className="text-xl md:text-2xl text-gray-400 lexend-deca-300">Computer Skills</h2>
                             <div className="flex flex-col pb-4">
                                 <div className="text-gray-400 text-justify md:text-left ibm-plex-mono-regular">
                                     <ComputerSkillsContainer />
