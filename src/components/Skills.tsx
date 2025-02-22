@@ -7,7 +7,7 @@ import { JavascriptOriginal } from 'devicons-react';
 import { ROriginal } from 'devicons-react';
 import { PhpOriginal } from 'devicons-react';
 
-
+import { AiOutlineOpenAI } from "react-icons/ai";
 import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill, RiNotionFill, RiNextjsFill } from "react-icons/ri";
 import { SiVite, SiApache, SiAdobeaftereffects, SiAdobelightroomclassic, SiCanva, SiTypescript, SiDeno, SiBun } from "react-icons/si";
@@ -70,6 +70,7 @@ const SkillShowcase: React.FC<SkillShowcaseProps> = ({centred = true}) => {
           { icon: <SiAdobelightroomclassic size={IconSize}/>, name: "Lightroom" },
           { icon: <SiCanva size={IconSize}/>, name: "Canva" },
           { icon: <RiNotionFill size={IconSize}/>, name: "Notion" },
+          { icon: <AiOutlineOpenAI size={IconSize}/>, name: "ChatGPT" },
         ],
       },
     ];
