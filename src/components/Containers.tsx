@@ -121,7 +121,7 @@ const AnimatedContainer: React.FC<AnimatedContainerProps> = ({
       : { from, to, config, delay }
   );
 
-  return <animated.div style={animation} className={`${className} justify-center w-full`}>{children}</animated.div>;
+  return <animated.div style={animation} className={`${className} w-full`}>{children}</animated.div>;
 };
 
 const BasicContainer: React.FC<BasicContainerProps> = ({

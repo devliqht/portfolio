@@ -5,11 +5,14 @@ import { PythonOriginal } from 'devicons-react';
 import { JavaOriginal } from 'devicons-react';
 import { JavascriptOriginal } from 'devicons-react';
 import { ROriginal } from 'devicons-react';
+import { PhpOriginal } from 'devicons-react';
+
 
 import { FaHtml5, FaCss3, FaReact, FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill, RiNotionFill, RiNextjsFill } from "react-icons/ri";
-import { SiVite, SiAdobeaftereffects, SiAdobelightroomclassic, SiCanva, SiTypescript, SiDeno, SiBun } from "react-icons/si";
+import { SiVite, SiApache, SiAdobeaftereffects, SiAdobelightroomclassic, SiCanva, SiTypescript, SiDeno, SiBun } from "react-icons/si";
 import { DiVisualstudio, DiApple, DiGithubBadge, DiTerminal, DiMongodb, DiGoogleCloudPlatform } from "react-icons/di";
+import { GrMysql } from "react-icons/gr";
 
 import { BasicContainer } from './Containers';
 import { Tooltip } from "react-tooltip";
@@ -34,6 +37,7 @@ const SkillShowcase: React.FC<SkillShowcaseProps> = ({centred = true}) => {
           { icon: <JavaOriginal size={IconSize}/>, name: "Java" },
           { icon: <PythonOriginal size={IconSize}/>, name: "Python" },
           { icon: <ROriginal size={IconSize}/>, name: "R" },
+          { icon: <PhpOriginal size={IconSize}/>, name: "Php" },
         ],
       },
       {
@@ -49,6 +53,9 @@ const SkillShowcase: React.FC<SkillShowcaseProps> = ({centred = true}) => {
           { icon: <RiNextjsFill size={IconSize}/>, name: "Next.js" },
           { icon: <SiVite size={IconSize}/>, name: "Vite" },
           { icon: <RiTailwindCssFill size={IconSize}/>, name: "TailwindCSS" },
+          { icon: <DiMongodb size={IconSize}/>, name: "MongoDB" },
+          { icon: <GrMysql size={IconSize}/>, name: "MySQL" },
+          { icon: <SiApache size={IconSize}/>, name: "Apache" },
         ],
       },
       {
@@ -58,7 +65,6 @@ const SkillShowcase: React.FC<SkillShowcaseProps> = ({centred = true}) => {
           { icon: <DiApple size={IconSize}/>, name: "Apple" },
           { icon: <DiGithubBadge size={IconSize}/>, name: "GitHub" },
           { icon: <DiTerminal size={IconSize}/>, name: "Terminal" },
-          { icon: <DiMongodb size={IconSize}/>, name: "MongoDB" },
           { icon: <DiGoogleCloudPlatform size={IconSize}/>, name: "GCloud" },
           { icon: <SiAdobeaftereffects size={IconSize}/>, name: "After Effects" },
           { icon: <SiAdobelightroomclassic size={IconSize}/>, name: "Lightroom" },
