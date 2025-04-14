@@ -9,6 +9,24 @@ export interface Project {
 
   const projects: Project[] = [
     {
+      title: "Schola",
+      imageUrl: "/schola.png",
+      tags: ["PHP", "HTML", "CSS", "JavaScript", "FontAwesome", "Cropper", "tinyMCE", "Tailwind-Inspired", "School Project"],
+      link: "https://github.com/devliqht/schola",
+      description:
+        "Schola is a forum application designed for schools, providing a platform for students, teachers, and staff to interact, share information, and participate in discussions. It features forum interactions, user profiles, a leveling system, and more.",
+      accordionContent: "This is a school project, but I hope to implement something like this later in the future but with a more modern approach and with modern technologies."
+    },
+    {
+      title: "VLSM and Subnet Calculator",
+      imageUrl: "/vlsm.png",
+      tags: ["React", "TypeScript", "Bun", "Next.js", "TailwindCSS", "ShadcnUI", "v0"],
+      link: "https://vlsm-calculator.dcism.org",
+      description:
+        "A VLSM calculator featuring a subnetting mode as well for equal subnet calculations. A tool I made to help my classmates study for networking midterms.",
+      accordionContent: "It is a tool created with v0 after a lot of prompts #promptEngineeringKekW"
+    },
+    {
       title: "Portfolio",
       imageUrl: "/portfolio.png",
       tags: ["React", "TypeScript", "Bun", "Vite", "TailwindCSS", "ShadcnUI", "React Router", "Vercel"],
@@ -22,7 +40,7 @@ export interface Project {
       imageUrl: "/osa.png",
       tags: ["React", "Node.js", "MongoDB", "Render.com", "Google API", "Express", "React Router", "Specialized School Project"],
       link: "https://github.com/devliqht/violation-tracker",
-      description: "A full-stack CRUD web application for tracking and handling student violations.",
+      description: "A full-stack CRUD web application for tracking and handling student violations. Submitted as CFP-01 Finals Project to attain a grade of 100.",
       accordionContent: "Features include role-based authentication, data visualization of violations, and integration with Google APIs for streamlined workflows."
     },
     {
@@ -30,7 +48,7 @@ export interface Project {
       imageUrl: "/res.png",
       tags: ["React", "Node.js", "MongoDB", "Render.com", "Google API", "Express", "React Router", "Specialized School Project", "Capstone"],
       link: "https://github.com/devliqht/res-proiect",
-      description: "A full-stack web application that streamlines the documentation of laboratory sessions using QR code scanning for quick experiment identification.",
+      description: "A full-stack web application that streamlines the documentation of laboratory sessions using QR code scanning for quick experiment identification. Submitted as a research paper during Grade 12 SHS.",
       accordionContent: "Includes QR code generation and scanning, a database architecture for storing lab session details, and real-time updates."
     },
     {
@@ -84,12 +102,21 @@ export interface Project {
       tags: ["React", "TypeScript", "Bun", "Vite", "TailwindCSS", "ShadcnUI", "React Router", "Vercel"],
       link: "https://tfl-adobe.vercel.app",
       description:
-        "",
-      accordionContent: ""
+        "A website featuring a comprehensive analysis of Adobe's EULA for GE-TFL midterm submission.",
+      accordionContent: "Instead of making a canva presentation as usual, I made a website for our group just for fun. Reuses some of the code of this portfolio website."
     },
   ];
   
   const UIDesigns: Project[] = [
+    {
+      title: "Happy Hour",
+      imageUrl: "/happy_hour.png",
+      tags: ["HTML", "CSS"],
+      link: "#soon",
+      description:
+        "The Happy Hour App is our platform dedicated to addressing food waste and promoting sustainability. Our app connects users with local businesses, offering affordable packages of unsold food items.",
+      accordionContent: "A finals project for GE-TFL. Link coming soon."
+    },
     {
       title: "ISMIS Conceptual",
       imageUrl: "/ismis.png",
