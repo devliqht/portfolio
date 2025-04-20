@@ -19,7 +19,7 @@ const ProjectsRender: React.FC<ProjectsRenderProps> = ({
   return (
         <BasicContainer className="border-none" noPadding={true}>
         <h3
-          className={`relative flex items-center text-3xl md:text-5xl text-[var(--white)] lexend-deca-700 tracking-tighter ${showMore ? '' : 'mb-8'} md:text-left w-full`}
+          className={`relative flex items-center text-3xl md:text-5xl bg-gradient-to-b from-gray-100 via-gray-300 to-gray-500 bg-clip-text text-transparent lexend-deca-700 tracking-tighter ${showMore ? '' : 'mb-8'} md:text-left w-full`}
           id="projects"
         >
           {title}
@@ -37,7 +37,7 @@ const ProjectsRender: React.FC<ProjectsRenderProps> = ({
                 </Link>
             </div>
           )}
-          <div className="flex flex-col md:flex-row flex-wrap gap-8 md:gap-2 mb-4 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4 w-full">
             {data.slice(0, renderCount).map((project, index) => (
               <ProjectsContainer
                 key={index}
