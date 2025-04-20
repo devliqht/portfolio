@@ -36,6 +36,15 @@ export interface Project {
       accordionContent: "This portfolio showcases interactive animations, reusable components, and a responsive design optimized for performance using Vite and Bun."
     },
     {
+      title: "CIS1102N Portfolio",
+      imageUrl: "/computing.png",
+      tags: ["React", "TypeScript", "Bun", "Vite", "TailwindCSS", "ShadcnUI", "React Router", "Vercel"],
+      link: "https://cis1102n.vercel.app",
+      description:
+        "The primary goal of The Turing Site is to serve as an informative and visually appealing platform to showcase portfolios. The site focuses on organizing and presenting information effectively.  The site caters to students and readers who are eager to explore detailed portfolios for learning, inspiration, or research. ",
+      accordionContent: "The concept of the website embodies a modern, minimalistic and stylish aesthetic. The minimalist elements provide a sleek, transparent feel, while the overall design exudes smoothness and flexibility to ensure a seamless user experience."
+    },
+    {
       title: "OSA Violation Tracker",
       imageUrl: "/osa.png",
       tags: ["React", "Node.js", "MongoDB", "Render.com", "Google API", "Express", "React Router", "Specialized School Project"],
@@ -104,6 +113,15 @@ export interface Project {
       description:
         "A website featuring a comprehensive analysis of Adobe's EULA for GE-TFL midterm submission.",
       accordionContent: "Instead of making a canva presentation as usual, I made a website for our group just for fun. Reuses some of the code of this portfolio website."
+    },
+    {
+      title: "docs 101",
+      imageUrl: "/docs.png",
+      tags: ["HTML", "CSS", "JS", "Bootstrap"],
+      link: "https://devliqht.github.io/docs/index.html",
+      description:
+        "A docs website I made back in 2021 which is supposed to serve as a tutorial website for Bosconians who are struggling with HTML/CSS/Javascript. It is incomplete and only some information are present.",
+      accordionContent: "Memory lane :')"
     },
   ];
   
