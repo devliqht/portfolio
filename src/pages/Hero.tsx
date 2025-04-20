@@ -16,10 +16,10 @@ const Hero = () => {
                     <div className="flex flex-col-reverse md:flex-row sm:mt-4 items-start justify-between" id="home">
                         <div className="flex flex-col md:w-[70%] md:pr-8">
                             <h1 className="text-4xl md:text-6xl text-left bg-gradient-to-b from-gray-100 via-gray-300 to-gray-500 bg-clip-text text-transparent lexend-deca-700 tracking-tighter">Hi. Hello. Welcome.</h1>
-                            <h2 className="text-2xl text-slate-400 lexend-deca-300 mt-3 text-left">Matt Cabarrubias</h2>
+                            <h2 className="text-2xl md:text-3xl text-slate-400 lexend-deca-400 mt-3 text-left tracking-tighter">Matt Cabarrubias</h2>
                             <div className="text-white lexend-deca-300 text-left flex flex-col h-full">
                                 {/* <h3 className="font-bold text-2xl mb-2 tracking-tighter ibm-plex-mono-semibold bg-gradient-to-b from-gray-100 via-gray-300 to-gray-400 bg-clip-text text-transparent border-b-[1px] pb-2 border-gray-700">&gt; <Typewriter text="Hello, world." delay={150} /></h3> */}
-                                <p className="my-4 text-justify text-md text-slate-300 md:text-[1.105rem] md:leading-6 md:tracking-tight lexend-deca-300">
+                                <p className="my-4 text-justify text-md text-slate-300 md:text-[1.105rem] md:leading-6 tracking-tight md:lexend-deca-300 lexend-deca-400">
                                     I am a 19 year old BSCS student at the University of San Carlos, specializing in
                                     web development, UI/UX design, and video editing. As a quick learner
                                     with a lifelong passion for coding, I bring creativity and technical
