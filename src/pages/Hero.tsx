@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
     return (
-        <div className="h-full flex flex-col justify-center md:items-center p-4 md:p-6">
+        <div className="h-full flex flex-col justify-center md:items-center px-4 md:p-6">
             <div className="flex flex-col md:flex-row justify-center">
                 <AnimatedContainer delay={300}>
                     <BasicContainer className="h-full" noPadding={false} paddingMobile={false} centred={true}>
